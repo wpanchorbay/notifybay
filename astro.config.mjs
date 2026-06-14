@@ -98,6 +98,7 @@ export default defineConfig({
             { label: "Installation", slug: "getting-started/installation" },
             { label: "Quick Start", slug: "getting-started/quick-start" },
             { label: "Configuration", slug: "getting-started/configuration" },
+            { label: "Manual Placement", slug: "guides/manual-placement" },
           ],
         },
         {
@@ -113,6 +114,12 @@ export default defineConfig({
             { label: "Waitlist vs Wishlist", slug: "leads/waitlist-vs-wishlist" },
             { label: "Lead Management", slug: "leads/lead-management" },
             { label: "Bulk Actions & Export", slug: "leads/bulk-actions-export" },
+          ],
+        },
+        {
+          label: "Customer Experience",
+          items: [
+            { label: "Customer Dashboard", slug: "guides/customer-dashboard" },
           ],
         },
         {
