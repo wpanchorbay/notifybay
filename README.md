@@ -1,4 +1,4 @@
-# Documentation Boilerplate
+# NotifyBay Documentation
 
 A reusable, production-ready documentation template built on [Astro Starlight](https://starlight.astro.build/). 
 This boilerplate is pre-configured with custom dark-mode aesthetics, custom components, optimized workflows, and GitHub Pages deployment.

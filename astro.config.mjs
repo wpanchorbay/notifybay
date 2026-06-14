@@ -96,40 +96,31 @@ export default defineConfig({
           items: [
             { label: "Introduction", slug: "getting-started/introduction" },
             { label: "Installation", slug: "getting-started/installation" },
-            { label: "Directory Structure", slug: "getting-started/directory-structure" },
+            { label: "Quick Start", slug: "getting-started/quick-start" },
           ],
         },
         {
-          label: "Backend Architecture",
+          label: "Dashboard & Analytics",
           items: [
-            { label: "Core Concepts", slug: "backend/core-concepts" },
-            { label: "REST API", slug: "backend/rest-api" },
-            { label: "Database & Models", slug: "backend/database-models" },
-            { label: "Cron Manager", slug: "backend/cron-manager" },
-            { label: "Settings API", slug: "backend/settings-api" },
-            { label: "Logger", slug: "backend/logger" },
+            { label: "Main Analytics", slug: "dashboard/analytics" },
+            { label: "Product Demand", slug: "dashboard/product-demand" },
           ],
         },
         {
-          label: "Frontend Architecture",
+          label: "Managing Leads",
           items: [
-            { label: "React SPA", slug: "frontend/react-spa" },
-            { label: "Component Libraries", slug: "frontend/components" },
-            { label: "Styling & Tailwind", slug: "frontend/styling" },
-            { label: "Build System", slug: "frontend/build-system" },
+            { label: "Waitlist vs Wishlist", slug: "leads/waitlist-vs-wishlist" },
+            { label: "Lead Management", slug: "leads/lead-management" },
+            { label: "Bulk Actions & Export", slug: "leads/bulk-actions-export" },
           ],
         },
         {
-          label: "Guides & Workflows",
+          label: "Settings & Customization",
           items: [
-            { label: "Resource Generator", slug: "guides/resource-generator" },
-            { label: "Adding Admin Pages", slug: "guides/adding-admin-pages" },
-          ],
-        },
-        {
-          label: "Others",
-          items: [
-            { label: "AI & Crawler Governance", slug: "others/ai-crawler" },
+            { label: "General & Display", slug: "settings/general-display" },
+            { label: "Engine Logic", slug: "settings/engine-logic" },
+            { label: "Email Templates", slug: "settings/email-templates" },
+            { label: "Advanced & System Status", slug: "settings/system-status" },
           ],
         },
       ],
