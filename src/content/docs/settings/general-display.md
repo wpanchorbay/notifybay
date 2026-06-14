@@ -9,7 +9,7 @@ The settings panel is your command center for tailoring the plugin to your speci
 
 The General tab controls the fundamental behavior and rules for your waitlists and wishlists.
 
-<!-- Insert Settings - General Tab Screenshot Here -->
+<img src="/notifybay-docs/assets/screenshots/settings-general.png" alt="NotifyBay General Settings Tab" data-lightbox="true" />
 
 ### Core Features
 *   **Enable Wishlist:** You can toggle the Wishlist (Price Drop) functionality on or off. If disabled, only the Waitlist (Back-in-Stock) functionality will be active. This allows you to use NotifyBay purely as a stock notification tool if desired.
@@ -30,7 +30,7 @@ The General tab controls the fundamental behavior and rules for your waitlists a
 
 The Display tab (labeled "Appearance" in the settings) allows you to integrate the frontend buttons seamlessly into your store's design and configure social proof.
 
-<!-- Insert Settings - Display Tab Screenshot Here -->
+<img src="/notifybay-docs/assets/screenshots/settings-display.png" alt="NotifyBay Display and Appearance Settings" data-lightbox="true" />
 
 ### Waitlist Display
 *   **Button Text:** Customize the text shown on the waitlist button (e.g., change "Notify Me" to "Join the Waitlist" or "Alert Me").

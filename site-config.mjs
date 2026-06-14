@@ -6,8 +6,7 @@ export const SITE_ORIGIN =
 export const BASE_PATH = "/notifybay-docs";
 
 export const REPO_URL =
-  process.env.DOCS_REPO_URL ??
-  "https://github.com/wpanchorbay/docs-boilerplate-starlight";
+  process.env.DOCS_REPO_URL ?? "https://github.com/wpanchorbay/notifybay";
 
 export const LOGO_SVG_PATH = "./src/assets/wpanchorbay-icon.svg";
 

@@ -61,9 +61,6 @@ export const PAGE_LINKS = {
   /** Getting Started – Configuration */
   configuration: `${BASE_PATH}/getting-started/configuration/`,
 
-  /** Guides – Example */
-  exampleGuide: `${BASE_PATH}/guides/example/`,
-
   /** Resources – Official Docs */
   officialDocs: `${BASE_PATH}/resources/official-docs/`,
 } as const;

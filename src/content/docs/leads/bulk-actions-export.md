@@ -9,7 +9,7 @@ As your store grows, your waitlists and wishlists will scale. Managing leads one
 
 If you need to change the status of multiple leads or clean up your database, use the Bulk Actions dropdown located above the Leads table.
 
-<!-- Insert Bulk Actions Screenshot Here -->
+<img src="/notifybay-docs/assets/screenshots/leads-bulk-actions.png" alt="NotifyBay Bulk Actions and Export Options" data-lightbox="true" />
 
 1.  **Filter/Search First (Optional):** If you only want to affect a specific segment, use the email search bar first.
 2.  **Select Leads:** Use the checkboxes on the left side of the table to select the specific leads you want to modify. You can select all leads on the *current page* (up to 20 at a time) by clicking the master checkbox in the table header.

@@ -9,7 +9,7 @@ Below the main metric cards on the Dashboard, you will find detailed insights in
 
 This interactive bar chart displays the volume of waitlist and wishlist requests over the last 6 months. Hovering over a bar reveals the exact number of requests for that period.
 
-<!-- Insert Historical Trend Chart Screenshot Here -->
+<img src="/notifybay-docs/assets/screenshots/dashboard-historical-trend.png" alt="NotifyBay Historical Demand Chart" data-lightbox="true" />
 
 Understanding your historical demand allows you to forecast future needs and understand broader customer behavior patterns:
 
@@ -21,7 +21,7 @@ Understanding your historical demand allows you to forecast future needs and und
 
 At the bottom of the dashboard, you will find two critical tables: **Top Requested Restocks** and **Most Wishlisted**. These tables provide laser-focused insights into exactly which products need your attention right now.
 
-<!-- Insert Top Restocks & Wishlist Tables Screenshot Here -->
+<img src="/notifybay-docs/assets/screenshots/dashboard-top-tables.png" alt="NotifyBay Top Requested Restocks and Wishlist Tables" data-lightbox="true" />
 
 ### Top Requested Restocks
 

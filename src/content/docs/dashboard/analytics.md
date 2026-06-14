@@ -5,7 +5,7 @@ description: Understanding the metrics on your NotifyBay dashboard.
 
 When you navigate to **NotifyBay > Dashboard**, the first thing you'll see is the top metrics overview. This gives you a quick snapshot of how well the plugin is performing and the immediate opportunities available to your store.
 
-<!-- Insert Main Dashboard Analytics Screenshot Here -->
+<img src="/notifybay-docs/assets/screenshots/dashboard-analytics.png" alt="NotifyBay Main Dashboard Analytics" data-lightbox="true" />
 
 ## The Metric Cards
 

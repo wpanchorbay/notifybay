@@ -5,7 +5,7 @@ description: Viewing, searching, and editing your subscribers.
 
 Navigate to **NotifyBay > Leads** to access the master table of all your subscribers. This is your central hub for managing the data captured by the plugin.
 
-<!-- Insert Leads Table Screenshot Here -->
+<img src="/notifybay-docs/assets/screenshots/leads-table.png" alt="NotifyBay Leads Management Table" data-lightbox="true" />
 
 ## Viewing the Data
 
@@ -50,4 +50,4 @@ Occasionally, a customer might contact you to change their target price or updat
    - **Price at Subscription:** Record of the product's price when they signed up (if applicable).
 4. Click **Save** to apply the changes.
 
-<!-- Insert Edit Lead Modal Screenshot Here -->
+<img src="/notifybay-docs/assets/screenshots/leads-edit-modal.png" alt="Editing a Lead in NotifyBay" data-lightbox="true" />

@@ -7,9 +7,9 @@ export const GET: APIRoute = () => {
   return new Response(
     JSON.stringify(
       {
-        name: "License Server Docs MCP",
+        name: "NotifyBay Docs MCP",
         description:
-          "Read-only MCP server for License Server documentation, agent guide, API reference, and troubleshooting guidance.",
+          "Read-only MCP server for NotifyBay documentation, agent guide, and technical reference.",
         documentation: FEED_LINKS.mcpDocs,
         static_docs: {
           llms: FEED_LINKS.llms,

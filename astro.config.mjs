@@ -97,6 +97,7 @@ export default defineConfig({
             { label: "Introduction", slug: "getting-started/introduction" },
             { label: "Installation", slug: "getting-started/installation" },
             { label: "Quick Start", slug: "getting-started/quick-start" },
+            { label: "Configuration", slug: "getting-started/configuration" },
           ],
         },
         {
@@ -121,6 +122,12 @@ export default defineConfig({
             { label: "Engine Logic", slug: "settings/engine-logic" },
             { label: "Email Templates", slug: "settings/email-templates" },
             { label: "Advanced & System Status", slug: "settings/system-status" },
+          ],
+        },
+        {
+          label: "Others",
+          items: [
+            { label: "AI & Crawler Governance", slug: "others/ai-crawler" },
           ],
         },
       ],

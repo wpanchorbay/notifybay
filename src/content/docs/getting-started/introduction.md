@@ -32,6 +32,6 @@ NotifyBay solves this by adding an elegant "Notify Me" or "Track Price" button t
 4. **Automated Workflow:** Set it up once and let the plugin handle the rest. NotifyBay monitors your WooCommerce inventory and pricing in the background, triggering emails automatically so you can focus on growing your business.
 
 > [!NOTE]  
-> See the screenshot below (once captured) to see how the frontend widget looks to your customers.
+> See the screenshot below to see how the frontend widget looks to your customers.
 
-<!-- Insert Frontend Widget Screenshot Here -->
+<img src="/notifybay-docs/assets/screenshots/frontend-widget.png" alt="NotifyBay Frontend Widget on Product Page" data-lightbox="true" />

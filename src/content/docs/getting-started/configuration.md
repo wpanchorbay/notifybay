@@ -1,22 +1,31 @@
 ---
 title: Configuration
-description: How to configure the boilerplate for your specific project.
+description: Essential configuration steps for NotifyBay.
 ---
 
-After installing the boilerplate, you need to update a few key settings to make it your own.
+NotifyBay requires some initial configuration to align it with your specific project requirements.
 
-## `site-config.mjs`
+## 1. Branding & Constants
 
-Update the variables in `site-config.mjs` to reflect your target deployment environment:
+Open `notifybay.php` and update the primary constants:
 
-- `SITE_ORIGIN`: Your main domain (e.g., `https://docs.wpanchorbay.com` or `https://org.github.io`).
-- `BASE_PATH`: The sub-path if deploying to a subdirectory (e.g., `/my-project-docs`).
-- `REPO_URL`: The URL to your GitHub repository for the "Edit this page" links.
+- `NOTIFYBAY_VERSION`: Set your current plugin version.
+- `NOTIFYBAY_FILE`: Points to the main plugin file.
+- `NOTIFYBAY_PATH`: Base filesystem path.
+- `NOTIFYBAY_URL`: Base URL for assets and scripts.
 
-## `astro.config.mjs`
+## 2. Composer & Autoloading
 
-Update the `title` and `description` under the `starlight` integration. You can also modify the `sidebar` array to structure your own pages.
+Ensure your `composer.json` is updated with your own vendor name. After changing it, run:
 
-## `package.json`
+```bash
+composer dump-autoload
+```
 
-Remember to change the `"name"` attribute in `package.json` to match your actual project.
+## 3. Frontend Environment
+
+The React SPA reads its configuration from the WordPress backend. However, for local development with Vite, you may need to adjust the `proxy` or `base` path in `frontend/vite.config.ts`.
+
+## 4. REST API Namespace
+
+The default REST API namespace is `notifybay/v1`. You can customize this in `app/Core/Api/NamespaceManager.php` (if applicable) to match your desired API structure.

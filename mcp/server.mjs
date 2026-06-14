@@ -37,7 +37,7 @@ function readDocs() {
 			const description = raw.match(/^description:\s*(.+)$/m)?.[1]?.trim() || '';
 			return {
 				id,
-				uri: `license-server-for-woocommerce://${id}`,
+				uri: `notifybay://${id}`,
 				title,
 				description,
 				text: stripFrontmatter(raw),
@@ -72,12 +72,12 @@ function searchDocs(query) {
 }
 
 const prompts = {
-	setup_license_server:
-		'Use the License Server docs to guide a WordPress/WooCommerce admin through installation, software release setup, product configuration, and verification.',
-	integrate_client_plugin:
-		'Use the License Server docs to design a client plugin integration with activation, license checks, cached status, update checks, and protected downloads.',
-	troubleshoot_license_activation:
-		'Use the License Server troubleshooting and REST docs to diagnose why a license activation, check, update-check, or download request is failing.',
+	setup_notifybay:
+		'Use the NotifyBay docs to guide a WordPress admin through installation, configuration, and verification.',
+	integrate_notifybay_feature:
+		'Use the NotifyBay docs to design a custom integration using the REST API, Database Models, or Cron Manager.',
+	troubleshoot_notifybay:
+		'Use the NotifyBay backend and frontend documentation to diagnose why a REST API call or React component is failing.',
 };
 
 function result(value) {
@@ -106,7 +106,7 @@ async function handleRequest(message) {
 					prompts: {},
 				},
 				serverInfo: {
-					name: 'license-server-for-woocommerce',
+					name: 'notifybay',
 					version: '0.1.0',
 				},
 			});
@@ -140,8 +140,8 @@ async function handleRequest(message) {
 			response = result({
 				tools: [
 					{
-						name: 'search_license_server_docs',
-						description: 'Search License Server documentation and agent guide pages.',
+						name: 'search_notifybay_docs',
+						description: 'Search NotifyBay documentation and agent guide pages.',
 						inputSchema: {
 							type: 'object',
 							properties: {
@@ -151,8 +151,8 @@ async function handleRequest(message) {
 						},
 					},
 					{
-						name: 'get_license_server_doc',
-						description: 'Read a License Server documentation page by resource URI or document id.',
+						name: 'get_notifybay_doc',
+						description: 'Read a NotifyBay documentation page by resource URI or document id.',
 						inputSchema: {
 							type: 'object',
 							properties: {
@@ -202,7 +202,7 @@ async function handleRequest(message) {
 
 function handleToolCall(params) {
 	const args = params.arguments || {};
-	if (params.name === 'search_license_server_docs') {
+	if (params.name === 'search_notifybay_docs') {
 		const matches = searchDocs(args.query);
 		return result({
 			content: [
@@ -215,7 +215,7 @@ function handleToolCall(params) {
 			],
 		});
 	}
-	if (params.name === 'get_license_server_doc') {
+	if (params.name === 'get_notifybay_doc') {
 		const doc = findDoc(args.id);
 		return doc
 			? result({
@@ -285,7 +285,7 @@ function startHttp() {
 	});
 
 	server.listen(PORT, () => {
-		console.error(`License Server for WooCommerce MCP listening on http://localhost:${PORT}/mcp`);
+		console.error(`NotifyBay MCP listening on http://localhost:${PORT}/mcp`);
 	});
 }
 

@@ -5,7 +5,7 @@ description: Customizing the messages your customers receive.
 
 The Email Templates tab allows you to craft the perfect message to bring customers back to your store. You can customize the subject line and body text for all automated messages sent by NotifyBay.
 
-<!-- Insert Settings - Email Templates Tab Screenshot Here -->
+<img src="/notifybay-docs/assets/screenshots/settings-email-templates.png" alt="Customizing NotifyBay Email Templates" data-lightbox="true" />
 
 ## Email Identity
 
