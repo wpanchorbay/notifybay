@@ -1,0 +1,102 @@
+---
+title: Welcome to NotifyBay
+description: The ultimate developer guide for the NotifyBay WordPress plugin boilerplate.
+template: splash
+prev: false
+next: false
+head:
+  # OpenGraph metadata
+  # FEED_LINKS.canonical — cannot use JS expressions in YAML frontmatter
+  - tag: meta
+    attrs:
+      property: og:url
+      content: https://docs.wpanchorbay.com/notifybay-docs/
+  - tag: meta
+    attrs:
+      property: og:type
+      content: website
+  - tag: meta
+    attrs:
+      property: og:title
+      content: Welcome to NotifyBay
+  - tag: meta
+    attrs:
+      property: og:description
+      content: The ultimate developer guide for the NotifyBay WordPress plugin boilerplate.
+  # FEED_LINKS.ogImage — cannot use JS expressions in YAML frontmatter
+  - tag: meta
+    attrs:
+      property: og:image
+      content: https://docs.wpanchorbay.com/notifybay-docs/assets/WPAnchorBay-Documentation-OG.png
+  - tag: meta
+    attrs:
+      property: og:image:alt
+      content: NotifyBay Documentation – WPAnchorBay
+  - tag: meta
+    attrs:
+      property: og:image:width
+      content: "1200"
+  - tag: meta
+    attrs:
+      property: og:image:height
+      content: "630"
+  # Twitter / X Card metadata
+  - tag: meta
+    attrs:
+      name: twitter:card
+      content: summary_large_image
+  - tag: meta
+    attrs:
+      name: twitter:title
+      content: Welcome to NotifyBay
+  - tag: meta
+    attrs:
+      name: twitter:description
+      content: The ultimate developer guide for the NotifyBay WordPress plugin boilerplate.
+  # FEED_LINKS.ogImage — cannot use JS expressions in YAML frontmatter
+  - tag: meta
+    attrs:
+      name: twitter:image
+      content: https://docs.wpanchorbay.com/notifybay-docs/assets/WPAnchorBay-Documentation-OG.png
+  - tag: meta
+    attrs:
+      name: twitter:image:alt
+      content: NotifyBay Documentation – WPAnchorBay
+hero:
+  tagline: A modern, production-ready WordPress plugin boilerplate bridging classic development with React and TypeScript.
+  image:
+    alt: NotifyBay Logo
+    file: ~/assets/wpanchorbay-icon.png
+  actions:
+    - text: Get Started
+      # PAGE_LINKS.installation — cannot use JS expressions in YAML frontmatter
+      link: /notifybay-docs/getting-started/installation/
+      icon: right-arrow
+      variant: primary
+    - text: View GitHub Repository
+      # EXTERNAL_LINKS.githubRepo — cannot use JS expressions in YAML frontmatter
+      link: https://github.com/wpanchorbay/notifybay
+      icon: external
+      variant: minimal
+---
+
+import { CardGrid } from '@astrojs/starlight/components';
+import Card from '../../components/starlight/Card.astro';
+import WPAnchorBayFooter from '../../components/WPAnchorBayFooter.astro';
+
+<CardGrid stagger>
+	<Card title="Pre-configured Styles" icon="pencil">
+		Comes with customized typography, dark mode specific overrides, and a rich aesthetic tailored for professional documentation.
+	</Card>
+	<Card title="GitHub Pages Ready" icon="rocket">
+		Includes a reliable GitHub Actions workflow that builds your documentation using PNPM and automatically deploys to GitHub Pages.
+	</Card>
+	<Card title="Custom Components" icon="setting">
+		Override Starlight defaults out of the box. Includes modified SiteTitle, ThemeProvider, and social icon configurations.
+	</Card>
+	<Card title="SEO & Performance" icon="open-book">
+		Fully leverages Astro's static site generation and includes optimized meta tags, sitemaps, and robots.txt.
+	</Card>
+</CardGrid>
+
+<WPAnchorBayFooter />
