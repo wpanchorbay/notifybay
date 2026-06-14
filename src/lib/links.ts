@@ -62,10 +62,10 @@ export const PAGE_LINKS = {
   configuration: `${BASE_PATH}/getting-started/configuration/`,
 
   /** Guides – Customer Dashboard */
-  customerDashboard: `${BASE_PATH}/guides/customer-dashboard/`,
+  customerDashboard: `${BASE_PATH}/customer-experience/customer-dashboard/`,
 
   /** Guides – Manual Placement */
-  manualPlacement: `${BASE_PATH}/guides/manual-placement/`,
+  manualPlacement: `${BASE_PATH}/getting-started/manual-placement/`,
 
   /** Resources – Official Docs */
   officialDocs: `${BASE_PATH}/resources/official-docs/`,

@@ -1,38 +1,76 @@
 ---
-title: Advanced & System Status
-description: Troubleshooting background jobs and advanced technical options.
+title: System Health & Advanced Settings
+description: Monitor your automation engine, troubleshoot common issues, and manage advanced plugin maintenance.
 ---
 
-If you run into issues with emails not sending, the Advanced and System Status tabs provide the diagnostic tools you need.
+NotifyBay is built to be a robust, "set and forget" solution. However, for high-volume stores, it’s important to know how to check the "health" of your notification engine and where to go if something isn't working as expected.
 
-## System Status Tab
-
-The System Status tab provides a real-time look into the plugin's background engine and your server environment. If you contact support, they will likely ask for this information.
-
-### Background Engine Status (Action Scheduler)
-NotifyBay uses WooCommerce's built-in Action Scheduler to process emails in the background so it doesn't slow down your website.
-*   **Pending:** Emails waiting to be sent in the next background batch.
-*   **In-Progress:** Emails actively being processed right now.
-*   **Complete:** Emails successfully sent.
-*   **Failed:** Emails that the system attempted to send but couldn't (usually due to a server configuration issue).
-
-### Lead Health
-*   **Failed Leads:** Subscribers whose notifications permanently failed.
-*   **In Processing:** Subscribers currently locked while the system determines if they should receive an email based on fair-play logic.
-
-### Environment Information
-Quickly verify your PHP, WordPress, and WooCommerce versions. Older versions of PHP may prevent the background engine from running correctly.
+This guide covers the **Status** and **Advanced** tabs located in your NotifyBay settings.
 
 ---
 
-## Advanced Tab
+## 1. Monitoring the Background Engine
 
-The Advanced tab contains technical options for maintenance and troubleshooting.
+Navigate to **NotifyBay > Status** to see the real-time performance of your automated notification queue.
 
-### Debug Mode
-*   **Enable developer logging:** When enabled, NotifyBay will log technical data during execution to help troubleshoot background jobs, email sending, and API calls. 
-*   *Note:* These logs are written to the native WooCommerce log system (`WooCommerce > Status > Logs`). You should only enable this when actively troubleshooting, as it can generate large files over time.
+### The Engine Queue (Jobs)
+NotifyBay processes emails in small batches to ensure your site remains fast for other shoppers. The **Action Scheduler Queue** card shows exactly how many notifications are in flight.
 
-### Deep Uninstall
-*   **Delete all tables and settings on plugin deletion:** By default, NotifyBay preserves your data if you deactivate and delete the plugin (in case you want to reinstall later). If you want to permanently wipe all Waitlist/Wishlist leads, custom database tables, and settings when uninstalling the plugin, check this box.
-*   **DANGEROUS:** Once this is checked and the plugin is deleted, the data cannot be recovered unless you have a full database backup.
+![Action Scheduler Queue Card](/notifybay-docs/assets/screenshots/status-engine-queue.png)
+
+*   **Pending:** Your "to-do" list. These are customers waiting for an email in the next scheduled batch.
+*   **In-Progress:** What the engine is working on at this exact second.
+*   **Complete:** A historical count of successfully sent notifications.
+*   **Failed:** Emails that couldn't be sent. This usually points to an issue with your site's email server (SMTP) rather than the plugin itself.
+
+### Lead Health (Diagnostics)
+This card helps you identify if specific customer data points are getting stuck in the database.
+
+![Lead Health Diagnostic Card](/notifybay-docs/assets/screenshots/status-lead-health-card.png)
+
+*   **In Processing:** Leads currently being evaluated by the engine. If this number stays high for more than an hour, it may indicate a conflict with another plugin.
+*   **Failed Leads:** These are subscribers that encountered a permanent error (e.g., an invalid email format). You can review and fix these in your [Leads Table](/notifybay-docs/leads/lead-management/).
+
+---
+
+## 2. Troubleshooting Common Merchant Issues
+
+### "My customers aren't receiving emails"
+If your analytics show notifications are being "Sent" but customers claim they haven't received them, follow these steps:
+
+1.  **Check Spam:** Ask the customer to check their junk folder.
+2.  **Verify Sender Email:** Ensure your "From Email" in **Settings > Email Templates** matches your domain (e.g., `sales@yourstore.com`).
+3.  **Install an SMTP Plugin:** We strongly recommend using a dedicated SMTP plugin (like WP Mail SMTP) to ensure high deliverability and prevent your emails from being blocked by providers like Gmail or Outlook.
+
+### "The 'Notify Me' button isn't appearing"
+1.  **Check Stock Status:** Ensure the product is set to **"Out of Stock"** in WooCommerce.
+2.  **Check Settings:** Verify that the Waitlist feature is enabled in **Settings > General**.
+3.  **Theme Conflict:** If you are using a custom page builder (like Elementor), you may need to place the button manually using [Shortcodes or Blocks](/notifybay-docs/getting-started/manual-placement/).
+
+---
+
+## 3. Advanced Maintenance
+
+The **Advanced** tab contains powerful tools usually reserved for troubleshooting or store migrations.
+
+### Debug Mode (Developer Logging)
+If you contact our support team, they might ask you to enable **Developer Logging**. 
+
+![Debug Mode Toggle](/notifybay-docs/assets/screenshots/status-advanced-debug.png)
+
+- **What it does:** Writes a detailed "play-by-play" of the plugin's background actions into your WooCommerce logs.
+- **Where to find logs:** Navigate to **WooCommerce > Status > Logs** and look for files starting with `notifybay-`.
+- **Important:** Disable this once your issue is resolved to save server disk space.
+
+### The "Deep Uninstall" Option
+This setting determines what happens to your data if you delete the NotifyBay plugin.
+
+![Deep Uninstall Setting](/notifybay-docs/assets/screenshots/status-advanced-uninstall.png)
+
+- **OFF (Default):** Keeps your data safe. If you delete and later reinstall NotifyBay, your thousands of leads and analytics history will still be there.
+- **ON:** Wipes the slate clean. This will **permanently erase** all leads, analytics, and settings from your database when the plugin is deleted.
+
+> [!WARNING]
+> Only enable **Deep Uninstall** if you are certain you want to lose all your NotifyBay data forever. We recommend taking a database backup first.
+
+<WPAnchorBayFooter />

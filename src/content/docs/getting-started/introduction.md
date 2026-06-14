@@ -1,37 +1,88 @@
 ---
-title: Introduction
-description: What is NotifyBay and how can it transform your WooCommerce store?
+title: Introduction to NotifyBay
+description: Master your store's inventory and pricing strategy. Automatically recover lost revenue with professional Back-in-Stock and Price Drop notifications.
 ---
 
 Welcome to the **NotifyBay** user guide.
 
-NotifyBay is a comprehensive, conversion-focused WordPress plugin designed to help WooCommerce store owners recover lost sales and track product demand through **Back-in-Stock (Waitlist)** and **Price Drop (Wishlist)** notifications. 
+NotifyBay is a high-performance, conversion-focused WooCommerce suite designed to recover lost revenue. It empowers store owners to bridge the gap between customer intent and successful conversion by automating **Back-in-Stock (Waitlist)** and **Price Drop (Wishlist)** notifications.
 
-Every eCommerce store faces the challenge of stockouts or price-sensitive shoppers. Instead of letting these potential buyers slip away to competitors, NotifyBay engages them right at the moment of intent.
+Every eCommerce store faces two major conversion killers: **Inventory stockouts** and **price sensitivity**. Instead of letting those potential buyers abandon your site, NotifyBay engages them exactly when their interest is highest.
 
-## Why Use NotifyBay?
+---
 
-When a product goes out of stock, or when a customer finds a product too expensive, you risk losing that sale forever. Modern shoppers are impatient, but they are also willing to wait if they truly want a product and are promised an update.
+## Powerful Sales Recovery Modules
 
-NotifyBay solves this by adding an elegant "Notify Me" or "Track Price" button to your product pages. 
+NotifyBay provides two distinct modules to capture customer demand and automate your marketing.
 
-- **Back-in-Stock (Waitlist):** Customers enter their email to be notified the moment an out-of-stock item is replenished. You capture the intent to buy, and the customer gets the product they want.
-- **Price Drop (Wishlist):** Customers set a target price they are willing to pay, and the plugin automatically emails them if the product's price drops below their target. Perfect for holiday sales, clearance events, or dynamic pricing models.
+### ⏳ Back-in-Stock (Waitlist)
+When a product hits zero inventory, NotifyBay replaces the static "Out of Stock" message with an elegant, high-converting "Notify Me" form. 
+- **The Trigger:** As soon as you update stock in WooCommerce, NotifyBay immediately emails everyone waiting.
+- **Variation Aware:** Customers can subscribe to specific sizes or colors, ensuring they only get notified for the exact item they want.
+- **Lead Expiry:** Allow customers to choose how long they want to stay on the list (e.g., 7, 30, or 90 days), ensuring your notification list stays fresh and relevant.
 
-## Practical Examples for Store Owners
+![Waitlist Subscription Form with Expiry](/notifybay-docs/assets/screenshots/intro-waitlist-form.png)
 
-- **Fashion & Apparel:** A popular jacket sells out in size Medium. Instead of seeing a generic "Out of Stock" message, the customer clicks "Notify Me when Medium is back". You order more Mediums knowing exactly how many people are waiting, and the moment you update inventory, those eager buyers receive an automated email.
-- **Electronics & Tech:** A customer wants a new smart home device but thinks $199 is too high. They set a Price Drop alert for $150. During your Black Friday sale, the price drops to $149. NotifyBay immediately emails the customer, bringing them back to complete the purchase.
-- **Handmade & Custom Goods:** Since production takes time, your items are frequently out of stock. NotifyBay acts as an automated waitlist, allowing you to gauge which creations are most requested before you start your next batch.
+### ⭐ Price Drop (Wishlist)
+Allow customers to track their favorite products and wait for a deal. Users can set a "Target Price"—their ideal purchase price.
+- **The Trigger:** If you lower the product price (via a sale or permanent change) to meet or beat their target, they receive an automated alert to come back and buy.
+- **Strategic Discounting:** Analyze subscriber data to see exactly what price point will trigger the most sales.
 
-## Key Benefits
+![Price Drop Button](/notifybay-docs/assets/screenshots/intro-wishlist-btn.png)
 
-1. **Recover Lost Revenue:** Automatically turn missed opportunities into sales by bringing customers back to your store exactly when the time is right.
-2. **Understand Product Demand:** The analytics dashboard shows exactly which out-of-stock products are most requested, helping you make smarter, data-driven restocking and purchasing decisions. Stop guessing what your customers want.
-3. **Build Your Email List:** Capture high-intent leads who are actively interested in your specific products. Even if they don't buy immediately, you've added an engaged prospect to your marketing funnel.
-4. **Automated Workflow:** Set it up once and let the plugin handle the rest. NotifyBay monitors your WooCommerce inventory and pricing in the background, triggering emails automatically so you can focus on growing your business.
+---
 
-> [!NOTE]  
-> See the screenshot below to see how the frontend widget looks to your customers.
+## The Intelligence Engine
 
-<img src="/notifybay-docs/assets/screenshots/frontend-widget.png" alt="NotifyBay Frontend Widget on Product Page" data-lightbox="true" />
+NotifyBay isn't just a mailer; it's a smart background engine built for modern, high-volume stores.
+
+### 1. Smart Restocking (Thresholds)
+Avoid "trigger-happy" notifications. If you only restock 1 unit (perhaps a return), NotifyBay can be configured to wait until a larger shipment arrives before firing off thousands of emails. This prevents customer frustration and "sold-out again" disappointment.
+
+### 2. Fair-Play Restock Batches
+If you restock 10 items but have 100 people waiting, NotifyBay can notify exactly the first 10 people in line. It then "reserves" those units for a few hours before notifying the next batch, ensuring every customer who gets an email actually has a chance to buy.
+
+![Fair Play Settings](/notifybay-docs/assets/screenshots/intro-fair-play.png)
+
+### 3. "Hurry" (Last Chance) Automation
+NotifyBay can automatically send a second "Hurry" email when a recently restocked item is about to sell out again. This follow-up triggers immediate conversions by creating a genuine "last chance" scenario.
+
+---
+
+## Exceptional Customer Experience
+
+Building trust is just as important as building a list. NotifyBay provides your customers with the transparency they expect from a premium store.
+
+### Customer Self-Service Dashboard
+Logged-in users can manage, track, and cancel their alerts directly from their native WooCommerce **My Account** page. This reduces support tickets and gives customers complete control over their data.
+
+![Customer My Account Dashboard](/notifybay-docs/assets/screenshots/intro-my-account-tab.png)
+
+### GDPR & Compliance Ready
+Includes full support for **Double Opt-In** verification and one-click unsubscription to ensure your email marketing stays compliant and your sender reputation stays clean.
+
+---
+
+## Data-Driven ROI
+
+Stop guessing what to order or when to run a sale. The NotifyBay dashboard provides clear, actionable metrics:
+- **Converted Sales:** See exactly how much money was generated from your notification emails.
+- **Potential Recovery:** Know the total market value of your waitlists to prioritize your purchasing budget.
+
+![Converted Sales Metric Card](/notifybay-docs/assets/screenshots/intro-conversion-card.png)
+
+---
+
+## Ready to Start Recovering Revenue?
+
+NotifyBay is a premium solution available exclusively via our official website. 
+
+> [!IMPORTANT]
+> **Not on WordPress.org:** NotifyBay is a professional-grade suite and is not listed on the public WordPress plugin directory. You can only download, license, and update the plugin via your [NotifyBay.com account dashboard](https://notifybay.com).
+
+### Next Steps:
+1.  **[Installation Guide](/notifybay-docs/getting-started/installation/):** Learn how to upload and activate your copy.
+2.  **[Quick Start Guide](/notifybay-docs/getting-started/quick-start/):** Get your first "Notify Me" button live in under 5 minutes.
+3.  **[Manual Placement](/notifybay-docs/getting-started/manual-placement/):** Learn how to use Gutenberg Blocks and Shortcodes.
+
+<WPAnchorBayFooter />

@@ -1,53 +1,85 @@
 ---
 title: Lead Management
-description: Viewing, searching, and editing your subscribers.
+description: Master your subscriber database. Learn how to search, edit, and track your notification leads.
 ---
 
-Navigate to **NotifyBay > Leads** to access the master table of all your subscribers. This is your central hub for managing the data captured by the plugin.
+The **NotifyBay > Leads** tab is your central command center for all customer intent data. Here, you can monitor every waitlist and wishlist request, manually manage subscribers, and analyze where your customers are in the conversion funnel.
 
-<img src="/notifybay-docs/assets/screenshots/leads-table.png" alt="NotifyBay Leads Management Table" data-lightbox="true" />
+![Lead Management Table Header](/notifybay-docs/assets/screenshots/leads-table-header.png)
 
-## Viewing the Data
+## The Leads Table
 
-The Leads table provides a comprehensive overview of every subscription. It supports pagination, allowing you to easily browse through thousands of leads 20 at a time using the Next and Previous buttons at the bottom of the screen.
+The main table provides a comprehensive overview of your subscribers. By default, it displays the 20 most recent leads, but you can browse through your entire history using the pagination buttons at the bottom.
 
-The table displays the following columns:
-- **Checkbox:** Use this to select one or more leads for bulk actions.
-- **Email:** The customer's contact address.
-- **Product:** The specific item they are interested in.
-- **Type:** Whether it is a Waitlist or Wishlist subscription.
-- **Target Price:** The price they are waiting for (if it's a Wishlist lead).
-- **Status:** The current state of the subscription.
-- **Date:** When they subscribed.
-- **Actions:** Quick links to Edit or Delete individual records.
+### Data Columns
+*   **Email:** The customer's contact address.
+*   **Product:** The specific item (including variation) they are interested in.
+*   **Type:** Labeled as **⏳ Waitlist** (Back-in-Stock) or **⭐ Wishlist** (Price Drop).
+*   **Target Price:** For Wishlist leads, this shows the exact price point required to trigger their notification.
+*   **Status:** The current stage of the lead in your automation engine.
+*   **Date:** When the customer first subscribed.
 
-### Status Definitions
-Understanding lead statuses helps you track where customers are in the funnel:
-- **Active:** The lead is currently waiting for a notification.
-- **Pending Verification:** If double opt-in is enabled, the customer has subscribed but hasn't yet clicked the confirmation link in their email.
-- **Notified:** An email has been successfully sent to this lead (either back-in-stock or price drop).
-- **Converted:** The lead clicked the link in the notification email and successfully purchased the product.
-- **Expired:** The subscription exceeded your configured expiration time (e.g., 90 days) and was automatically closed.
-- **Failed:** The system attempted to send an email, but it failed (usually due to an invalid email address or server issue).
-- **Unsubscribed:** The customer manually opted out of receiving further notifications for this item.
+---
 
-## Searching Leads
+## Understanding Lead Statuses
 
-If you need to find a specific customer, you don't need to manually click through pages.
-1. Use the **Search by email...** input box located at the top right of the Leads interface.
-2. Enter the full or partial email address.
-3. Click the **Search** button. The table will update to show only matching records.
+Every lead follows a lifecycle. Understanding these statuses is key to troubleshooting why a customer may not have received an email.
 
-## Editing a Lead
+| Status | Meaning |
+| :--- | :--- |
+| **Active** | The lead is valid and waiting for a restock or price drop. |
+| **Pending Verification** | User has signed up but has **not yet clicked the link** in their Double Opt-In email. |
+| **Notified** | An automated email has been successfully sent to this customer. |
+| **Converted** | The customer clicked the email link and successfully purchased the product. |
+| **Expired** | The lead reached your configured expiration limit (e.g., 30 days) without a restock. |
+| **Unsubscribed** | The customer manually opted out via the link in their email or dashboard. |
+| **Failed** | The email couldn't be delivered (likely due to an invalid email or SMTP issue). |
 
-Occasionally, a customer might contact you to change their target price or update their email address. You can do this manually from the dashboard.
+---
 
-1. Locate the lead in the table (use the search bar if necessary).
-2. Click the **Edit** button in the Actions column.
-3. A modal will appear allowing you to modify the following details:
-   - **Email Address:** Correct any typos in the customer's email.
-   - **Status:** Manually update their stage in the funnel (e.g., force a lead to be 'Active' again).
-   - **Price at Subscription:** Record of the product's price when they signed up (if applicable).
-4. Click **Save** to apply the changes.
+## Searching & Filtering
 
-<img src="/notifybay-docs/assets/screenshots/leads-edit-modal.png" alt="Editing a Lead in NotifyBay" data-lightbox="true" />
+Finding specific data is fast and intuitive, even with thousands of leads.
+
+### 🔍 Quick Search
+Use the search bar at the top right to find a lead by their **email address**. This is useful for answering support tickets or manually updating a single user.
+
+![Leads Search Bar](/notifybay-docs/assets/screenshots/leads-search-bar.png)
+
+### ⚡ Bulk Actions
+Manage multiple leads at once by selecting their checkboxes and using the Bulk Actions dropdown:
+*   **Mark Active:** Reset "Notified" or "Expired" leads back to "Active" if you want them to receive the next alert.
+*   **Mark Expired:** Manually retire old leads.
+*   **Delete:** Permanently remove selected leads from your database.
+
+![Bulk Actions Selection](/notifybay-docs/assets/screenshots/leads-bulk-actions-ui.png)
+
+---
+
+## Manually Editing a Subscriber
+
+Sometimes you need to correct a customer's mistake, such as a typo in their email or a target price that was set too low.
+
+1.  Locate the lead and click the **Edit** button in the Actions column.
+2.  In the **Edit Subscriber** modal, you can change:
+    *   **Email Address:** Fix typos to ensure delivery.
+    *   **Status:** Manually move them between Active, Notified, or Unsubscribed.
+    *   **Price at Subscription:** (Wishlist only) Adjust the target price if the customer changed their mind.
+
+![Edit Subscriber Modal](/notifybay-docs/assets/screenshots/leads-edit-modal-view.png)
+
+3.  Click **Save** to apply the changes immediately.
+
+---
+
+## Data Portability (Export)
+
+You can download your entire subscriber list as a CSV file at any time. This is perfect for importing high-intent leads into your external CRM or email marketing tools (like Mailchimp or Klaviyo).
+
+1.  Click the **Export CSV ⬇** button at the top of the Leads page.
+2.  The download will begin automatically.
+
+![Export CSV Button](/notifybay-docs/assets/screenshots/leads-export-btn.png)
+
+> [!TIP]
+> Use the **Converted** filter (or export) to identify your most loyal customers for future reward programs!

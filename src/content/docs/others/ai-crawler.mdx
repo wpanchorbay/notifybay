@@ -1,14 +1,56 @@
 ---
-title: Meta files and discovery endpoints
-description: Learn more about Astro Starlight.
+title: AI & Crawler Governance
+description: How NotifyBay documentation provides machine-readable discovery for AI agents and search crawlers.
 ---
 
-These public machine-readable files help crawlers, agents, and automation discover the docs and related integration metadata:
+NotifyBay is built with an **AI-First** philosophy. Beyond human-readable pages, this site provides a sophisticated layer of machine-readable data designed specifically for AI agents, crawlers, and automated workflows.
 
-- [robots.txt](../../robots.txt) for crawler policy and the sitemap reference.
-- [llms.txt](../../llms.txt) for the concise LLM-friendly overview of the documentation set. This endpoint is also advertised with a site-wide `<link rel="alternate">` tag.
-- [llms-full.txt](../../llms-full.txt) for the expanded plain-text export of the docs corpus. This endpoint is also advertised with a site-wide `<link rel="alternate">` tag.
-- Per-page Markdown/MDX source exports under `/markdown/` (`<base>/markdown/<page-slug>.md`), for example [markdown/index.md](../../markdown/index.md) or [markdown/others/ai-crawler.md](../../markdown/others/ai-crawler.md). Each documentation page advertises its own export with a page-specific `<link rel="alternate" type="text/markdown">` tag.
-- [sitemap-index.xml](../../sitemap-index.xml) for the top-level sitemap index.
-- [sitemap-0.xml](../../sitemap-0.xml) for the generated URL list currently referenced by the sitemap index.
-- [.well-known/mcp.json](../../.well-known/mcp.json) for MCP discovery metadata related to the public documentation site.
+This ensures that tools like Gemini, ChatGPT, and specialized coding agents can understand the NotifyBay ecosystem with 100% accuracy.
+
+## 🤖 LLM-Friendly Discovery
+
+We provide specialized text exports that remove navigation menus, scripts, and styling, leaving only the pure technical content.
+
+### 1. The Documentation Index (`llms.txt`)
+A concise, plain-text index of every page in this documentation. It allows an agent to quickly map out the site structure without scraping HTML.
+- **Endpoint:** [/notifybay-docs/llms.txt](../../llms.txt)
+
+### 2. Full Content Export (`llms-full.txt`)
+A single, massive text file containing the entire documentation corpus. This is ideal for giving an AI agent "full context" in a single request.
+- **Endpoint:** [/notifybay-docs/llms-full.txt](../../llms-full.txt)
+
+<img src="/notifybay-docs/assets/screenshots/ai-llms-link-tags.png" alt="Browser Head showing LLM discovery links" data-lightbox="true" />
+
+> **Pro Tip:** Look at the HTML `<head>` of any page on this site. You will find `<link rel="alternate">` tags that automatically point agents to these files.
+
+---
+
+## 🛠 Real-Time Agent Tools (MCP)
+
+NotifyBay includes a **Model Context Protocol (MCP)** server. This allows AI agents to "connect" to the documentation and query it using standardized JSON-RPC tools.
+
+- **Discovery Endpoint:** [/.well-known/mcp.json](../../.well-known/mcp.json)
+- **Capability:** Allows agents to search the docs and read specific pages programmatically.
+
+<img src="/notifybay-docs/assets/screenshots/ai-mcp-json.png" alt="NotifyBay MCP Discovery Metadata" data-lightbox="true" />
+
+---
+
+## 📄 Source Portability (Markdown Mirrors)
+
+For every page on this site, we provide a mirrored `.md` source export. This allows you (or an agent) to download the raw content for local use or fine-tuning.
+
+- **Pattern:** `<base-url>/markdown/<page-slug>.md`
+- **Example:** [Introduction Source](../../markdown/getting-started/introduction.md)
+
+---
+
+## 🔍 Traditional SEO & Crawling
+
+We follow standard web conventions to ensure search engines like Google and Bing index our content correctly.
+
+- **[robots.txt](../../robots.txt):** Defines the crawler policy and points to the sitemap.
+- **[sitemap-index.xml](../../sitemap-index.xml):** The master index of all crawlable URLs.
+- **[sitemap-0.xml](../../sitemap-0.xml):** The generated list of documentation pages.
+
+<img src="/notifybay-docs/assets/screenshots/ai-robots-txt.png" alt="NotifyBay robots.txt and Sitemap Reference" data-lightbox="true" />

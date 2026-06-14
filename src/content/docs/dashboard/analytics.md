@@ -1,40 +1,76 @@
 ---
-title: Main Analytics
-description: Understanding the metrics on your NotifyBay dashboard.
+title: Dashboard Analytics
+description: Turn customer interest into actionable growth. Learn how to read your NotifyBay dashboard metrics and prioritize inventory.
 ---
 
-When you navigate to **NotifyBay > Dashboard**, the first thing you'll see is the top metrics overview. This gives you a quick snapshot of how well the plugin is performing and the immediate opportunities available to your store.
+The **NotifyBay Dashboard** transforms thousands of individual customer requests into a high-level strategic overview of your store's performance. It helps you stop guessing what to order or when to run a sale by showing you exactly what your customers want right now.
 
-<img src="/notifybay-docs/assets/screenshots/dashboard-analytics.png" alt="NotifyBay Main Dashboard Analytics" data-lightbox="true" />
+To access your analytics, navigate to **NotifyBay > Dashboard** in your WordPress admin.
 
-## The Metric Cards
+---
 
-The dashboard features four primary metric cards designed to give you an immediate understanding of customer intent and revenue opportunities.
+## 1. Top Metric Cards
 
-### 1. Active Waitlist
-This represents the total number of unique customer requests currently waiting for out-of-stock products to be replenished. 
+The four cards at the top of your dashboard provide an instant snapshot of your revenue opportunities and historical success.
 
-*   **How it works:** Every time a user clicks "Notify me when available" on an out-of-stock product, this number increases. It decreases when you restock the item and the notification is sent.
-*   **Actionable Insight:** A high number here means you are leaving money on the table due to inventory shortages. You should prioritize restocking the items these customers are waiting for. 
-*   **Revenue Scenario:** If you see a sudden spike in your Active Waitlist, check your inventory levels. You might have run out of a best-seller during a marketing campaign. Expediting a restock for these items can capture sales before those customers buy from a competitor.
+### Active Waitlist
+This is the total number of unique shoppers currently waiting for out-of-stock items.
+*   **The Goal:** Keep this number low by restocking high-demand items quickly.
+*   **Merchant Tip:** A rising Active Waitlist during a marketing campaign indicates you are out-performing your inventory—it's a signal to increase your next purchase order.
 
-### 2. Price Watchers
-This represents the total number of customers who have set a target price for products they want, but find currently too expensive.
+![Active Waitlist Card](/notifybay-docs/assets/screenshots/analytics-card-waitlist.png)
 
-*   **How it works:** Customers enter their desired price for a product. This metric tracks all active requests across your store.
-*   **Actionable Insight:** If this number is high, you have significant pent-up demand locked behind a price barrier. You might want to consider running a flash sale, creating a bundle, or lowering prices slightly to trigger these notifications and secure those sales.
-*   **Revenue Scenario:** You have a premium product with 50 Price Watchers. By analyzing their target prices, you realize a 10% discount would trigger notifications for 80% of them. You can schedule a weekend flash sale at that 10% discount, automatically emailing all 40 of those ready-to-buy customers.
+### Price Watchers
+The total count of customers who have set a "Target Price" for in-stock items but haven't purchased yet.
+*   **The Goal:** Convert these "browsers" into "buyers" by hitting their target price.
+*   **Merchant Tip:** High numbers here mean your products are desired, but the current price is a barrier. Consider a temporary sale to clear this queue.
 
-### 3. Converted Sales
-This metric tracks the total number of sales that were generated *directly* from a NotifyBay email link.
+![Price Watchers Card](/notifybay-docs/assets/screenshots/analytics-card-watchers.png)
 
-*   **How it works:** When a customer receives a restock or price drop email, clicks the link, and completes a purchase within that session, it counts as a conversion.
-*   **Actionable Insight:** This is your core ROI (Return on Investment) metric. It proves the tangible, monetary value the plugin is bringing to your store. You can use this to gauge the effectiveness of your notification emails.
-*   **Revenue Scenario:** By tracking this over time, you can see if your email copy needs tweaking. If you have a high number of notifications sent but low Converted Sales, you might need to make your emails more urgent or improve the call-to-action.
+### Converted Sales
+Your primary **ROI Metric**. This tracks the total number of sales generated *directly* from a NotifyBay email link.
+*   **The Goal:** Watch this number grow to prove the monetary value the plugin adds to your store.
+*   **How it works:** A sale is counted if a customer clicks an automated restock or price drop email and completes their purchase within your defined [Conversion Window](/notifybay-docs/settings/engine-logic/).
 
-### 4. Potential Recovery
-This is an estimated currency value of your current waitlist and wishlist. It calculates the total value of the products people are waiting for at their current regular price.
+![Converted Sales Card](/notifybay-docs/assets/screenshots/analytics-card-converted.png)
 
-*   **How it works:** It multiplies the number of waitlist and wishlist requests by the price of the corresponding products.
-*   **Actionable Insight:** This is the amount of revenue you could instantly recover if you restocked all requested items and met the price expectations of your watchers. It serves as a powerful motivator for inventory and pricing management.
-*   **Revenue Scenario:** You are deciding on your monthly purchasing budget. Looking at the Potential Recovery metric can help you justify a larger budget to your finance team (or yourself) by showing exactly how much revenue is guaranteed if the inventory is acquired.
+### Potential Recovery
+The estimated market value of your current waitlist.
+*   **Calculation:** It multiplies the number of active waitlist leads by the current price of those items.
+*   **The Goal:** This is the "Money on the Table." Use this figure to justify inventory budgets to your team or bank.
+
+![Potential Recovery Card](/notifybay-docs/assets/screenshots/analytics-card-recovery.png)
+
+---
+
+## 2. Historical Demand Trends
+
+This interactive chart displays your lead generation volume over the last **6 months**.
+
+![6-Month Historical Chart](/notifybay-docs/assets/screenshots/analytics-historical-chart.png)
+
+*   **Seasonality:** Identify which months your customers are most active in requesting items.
+*   **Campaign Impact:** Correlate spikes in the chart with your social media ads or influencer shoutouts. If an ad drives 500 people to a waitlist, you know that campaign was a success even if you were out of stock.
+
+---
+
+## 3. High-Priority Action Tables
+
+Located at the bottom of the dashboard, these tables tell you exactly which products to restock first.
+
+### Top Requested Restocks
+Ranks your out-of-stock products by the number of active subscribers waiting for them.
+*   **Action:** Restock the product at the top of this list first—it represents your fastest guaranteed revenue.
+
+### Most Wishlisted
+Ranks your in-stock products by the number of price watchers.
+*   **Action:** If a product has high watchers, it's a prime candidate for your next flash sale or email promotion.
+
+![Dashboard Action Tables](/notifybay-docs/assets/screenshots/analytics-action-tables.png)
+
+---
+
+> [!TIP]
+> Use the **Refresh** button at the top of the action tables to ensure you are seeing the most recent data if you have been restocking items in a separate browser tab.
+
+<WPAnchorBayFooter />

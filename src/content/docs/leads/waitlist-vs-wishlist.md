@@ -1,32 +1,56 @@
 ---
 title: Waitlist vs Wishlist
-description: Understanding the two types of NotifyBay leads and their strategic value.
+description: Understanding the two core modules of NotifyBay and how they drive different types of revenue.
 ---
 
-When reviewing your leads in the **NotifyBay > Leads** tab, you will notice that every entry is categorized as either a **Waitlist** or **Wishlist** type. 
+When reviewing your subscriber data in the **NotifyBay > Leads** tab, you will notice that every entry is categorized as either a **Waitlist** or a **Wishlist** type. 
 
-Understanding the difference is crucial for effectively managing your subscribers and tailoring your marketing strategies.
+Understanding the difference between these two modules is crucial for effectively managing your subscribers and tailoring your marketing strategies.
+
+---
 
 ## ⏳ Waitlist (Back-in-Stock)
 
 A Waitlist lead is created when a customer subscribes to be notified about an **out-of-stock** product. 
 
-- **Trigger:** The notification email is triggered automatically when the product's inventory status changes from "Out of stock" to "In stock", or when the stock quantity rises above your configured threshold.
-- **Target Price:** Waitlist leads do *not* have a target price. The customer is simply waiting for availability, regardless of the current price.
+![Waitlist Form Badge](/notifybay-docs/assets/screenshots/leads-waitlist-badge.png)
 
-### Common Use Cases for Waitlists
-- **High-Demand Drops:** Perfect for limited-edition apparel, exclusive art prints, or new product launches where initial stock sells out quickly.
-- **Seasonal Items:** Capture interest for holiday decorations or seasonal gear while out of season, then notify everyone the moment inventory arrives.
-- **Supply Chain Delays:** Keep customers engaged even if you're experiencing manufacturing or shipping delays. Instead of a dead-end "Out of Stock" page, you build a ready-to-buy audience.
+- **The Trigger:** The notification email is sent automatically when you update your WooCommerce inventory and the product becomes "In stock."
+- **Customer Intent:** These shoppers have immediate intent to buy. They have already committed to your product and are simply waiting for you to make it available.
+- **Strategic Value:** Use waitlist volume to **prioritize purchase orders**. If 50 people are waiting for a sold-out item, restocking it is a guaranteed revenue win.
+
+---
 
 ## ⭐ Wishlist (Price Drop)
 
 A Wishlist lead is created when a customer subscribes to an **in-stock** product because they are waiting for a better deal.
 
-- **Trigger:** When subscribing, the customer inputs their "Target Price" (e.g., the product is $50, but they only want to pay $40). The notification email is triggered automatically if you lower the product's price to meet or beat their target.
-- **Target Price:** Wishlist leads *always* have a target price associated with them. You can view this price in the Leads table to see exactly what discount is required to convert that specific customer.
+![Wishlist Form Badge](/notifybay-docs/assets/screenshots/leads-wishlist-badge.png)
 
-### Common Use Cases for Wishlists
-- **High-Ticket Items:** Customers often hesitate on expensive purchases (like electronics or furniture). A wishlist allows them to register their interest and wait for a sale like Black Friday.
-- **Price-Sensitive Shoppers:** Capture leads who would otherwise abandon your store to look for cheaper alternatives or coupon codes.
-- **Strategic Discounting:** By viewing the average "Target Price" for a specific product in your leads table, you can determine exactly how much to discount an item during your next sale to maximize conversions without sacrificing too much margin.
+- **The Trigger:** The customer sets a "Target Price" (e.g., the product is $100, but they only want to pay $80). The alert is sent if you lower the price to meet or beat that target.
+- **Customer Intent:** These shoppers are price-sensitive. They want your product but are hesitant to pay the current full price.
+- **Strategic Value:** Use "Target Price" data for **strategic discounting**. If most watchers are waiting for a 15% discount, running a flash sale at that exact price point will trigger a massive conversion spike.
+
+---
+
+## Strategic Comparison
+
+| Feature | Waitlist | Wishlist |
+| :--- | :--- | :--- |
+| **Product Status** | Out of Stock | In Stock |
+| **Primary Driver** | Inventory Availability | Price Sensitivity |
+| **Key Metric** | [Potential Recovery](/notifybay-docs/dashboard/analytics/) | [Pent-up Demand](/notifybay-docs/dashboard/analytics/) |
+| **Marketing Goal** | Immediate conversion upon restock. | Strategic conversion during sales events. |
+
+---
+
+## Summary: How They Work Together
+
+NotifyBay is unique because it handles both ends of the conversion funnel. 
+- While **Waitlists** ensure you don't lose sales to competitors when you're out of stock, 
+- **Wishlists** ensure you don't lose sales to bargain-hunters who are waiting for a coupon code or a holiday sale.
+
+By running both modules, you capture 100% of customer interest, regardless of your current inventory or pricing.
+
+> [!TIP]
+> You can enable or disable these modules individually in your [General Settings](/notifybay-docs/settings/general-display/).

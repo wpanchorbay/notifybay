@@ -1,44 +1,63 @@
 ---
-title: Product Demand
-description: Using historical trends and top requests to guide purchasing.
+title: Product Demand & Strategy
+description: Move from reactive to proactive management. Learn how to use historical trends and top requests to guide your purchasing and pricing.
 ---
 
-Below the main metric cards on the Dashboard, you will find detailed insights into product demand. These tools are designed to move you from reactive inventory management to proactive, data-driven purchasing and pricing decisions.
+While the [Main Analytics](/notifybay-docs/dashboard/analytics/) provide high-level numbers, the **Product Demand** section of your dashboard provides the granular data needed for day-to-day operations. 
 
-## Historical Demand Chart
+These tools are designed to help you make data-driven decisions on exactly what to restock, when to run a sale, and how to forecast your inventory needs.
 
-This interactive bar chart displays the volume of waitlist and wishlist requests over the last 6 months. Hovering over a bar reveals the exact number of requests for that period.
+---
 
-<img src="/notifybay-docs/assets/screenshots/dashboard-historical-trend.png" alt="NotifyBay Historical Demand Chart" data-lightbox="true" />
+## 1. The Historical Demand Chart
 
-Understanding your historical demand allows you to forecast future needs and understand broader customer behavior patterns:
+This bar chart provides a 6-month rolling view of every notification request generated across your entire store (including both Waitlists and Wishlists).
 
-*   **Identify Seasonality:** Notice spikes in requests during certain times of the year. For example, if you sell winter gear, you might see a spike in requests in late autumn as people prepare, allowing you to stock up earlier next year.
-*   **Measure Growth & Campaign Impact:** See if the overall trend of people subscribing to notifications is increasing. You can also correlate spikes in this chart with your marketing campaigns. Did a recent ad drive a lot of traffic to an out-of-stock item? This chart will show you.
-*   **Inventory Cycle Optimization:** If the chart is constantly high, it indicates a systemic issue with under-ordering. You may need to increase your baseline inventory levels or order more frequently to avoid lost sales.
+![6-Month Historical Demand Bar Chart](/notifybay-docs/assets/screenshots/demand-historical-chart.png)
 
-## Top Requested Tables
+### Strategic Insights:
+*   **Identify Seasonality:** Notice spikes in requests during specific months. If you sell apparel and see a spike in "Small" waitlist requests every October, you can use this as proof to order higher quantities earlier next year.
+*   **Measure Campaign Success:** Did a recent social media ad drive traffic to an out-of-stock item? The spike in this chart confirms that the campaign was successful at capturing intent, even if the inventory wasn't ready.
+*   **Inventory Health:** If your bars are consistently growing while your sales remain flat, it indicates a systemic issue with under-ordering. You are capturing interest, but failing to replenish fast enough to convert it.
 
-At the bottom of the dashboard, you will find two critical tables: **Top Requested Restocks** and **Most Wishlisted**. These tables provide laser-focused insights into exactly which products need your attention right now.
+---
 
-<img src="/notifybay-docs/assets/screenshots/dashboard-top-tables.png" alt="NotifyBay Top Requested Restocks and Wishlist Tables" data-lightbox="true" />
+## 2. Top Requested Restocks (Inventory Priority)
 
-### Top Requested Restocks
+This table is your definitive guide for your next purchase order. It ranks your out-of-stock products by the number of active subscribers waiting for them.
 
-This table ranks your out-of-stock products by the number of active waitlist subscribers (listed under the "Demand" column).
+![Top Requested Restocks Table Crop](/notifybay-docs/assets/screenshots/demand-restocks-table.png)
 
-Instead of guessing which products to order from your suppliers first, use this table as your definitive guide. The product at the top of this list is your most guaranteed avenue for immediate revenue.
+*   **The "Demand" Column:** This red badge shows the exact number of people who will receive an email the moment you update your stock.
+*   **Purchasing Priority:** Always restock the product at the very top of this list first. It represents your fastest guaranteed revenue.
+*   **Supplier Negotiation:** If a specific product is consistently at the top of this list, use a [CSV Export](/notifybay-docs/leads/bulk-actions-export/) of that data to negotiate better bulk pricing or faster shipping times with your manufacturer.
 
-*   **Purchasing Priority:** Always prioritize reordering the top 3-5 items on this list.
-*   **Supplier Negotiation:** If a specific product is consistently at the top of this list, you have strong evidence of high demand. Use this data to negotiate better bulk pricing or faster shipping times with your supplier.
-*   **Product Development:** If a particular style or variation is heavily requested, consider expanding that specific product line.
+---
 
-### Most Wishlisted
+## 3. Most Wishlisted (Pricing Intelligence)
 
-This table ranks products by the number of active price watchers (listed under the "Watchers" column). 
+This table ranks your in-stock products by the number of active price watchers. If a product has a very high number of watchers, it means demand is high, but your current price is acting as a significant barrier to entry.
 
-If a product has a very high number of watchers, it means demand is high, but your price is acting as a significant barrier to entry. This is a crucial indicator for your pricing strategy.
+![Most Wishlisted Table Crop](/notifybay-docs/assets/screenshots/demand-wishlist-table.png)
 
-*   **Strategic Discounting:** Instead of store-wide sales that eat into your margins unnecessarily, run targeted promotions *only* on the items at the top of this list.
+*   **Strategic Discounting:** Instead of store-wide sales that eat into your margins, run targeted promotions *only* on the items at the top of this list to trigger a flood of automated notifications.
 *   **Competitive Analysis:** If a product is highly wishlisted but rarely bought at full price, check your competitors. Are they undercutting you? You may need to permanently adjust your base price to remain competitive.
-*   **Bundle Opportunities:** If you can't lower the price of a highly wishlisted item, consider bundling it with a high-margin, low-cost accessory to increase perceived value without dropping the sticker price.
+*   **Bundle Opportunities:** If you cannot lower the price further, consider bundling a highly wishlisted item with a high-margin, low-cost accessory to increase perceived value.
+
+---
+
+## 4. Real-Time Data Refresh
+
+The Dashboard uses intelligent caching to keep your site fast. However, if you are actively restocking items and want to see the updated table rankings immediately, use the **Refresh** tool.
+
+![Refresh Button Section](/notifybay-docs/assets/screenshots/demand-refresh-button.png)
+
+1.  Locate the **Refresh** link at the top right of the action tables.
+2.  Click to force a live calculation of your subscriber data.
+
+---
+
+> [!TIP]
+> Use the **Potential Recovery** metric on the main analytics page to determine exactly how much budget to allocate to the top items in your **Restocks** list.
+
+<WPAnchorBayFooter />

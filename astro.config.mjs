@@ -98,7 +98,7 @@ export default defineConfig({
             { label: "Installation", slug: "getting-started/installation" },
             { label: "Quick Start", slug: "getting-started/quick-start" },
             { label: "Configuration", slug: "getting-started/configuration" },
-            { label: "Manual Placement", slug: "guides/manual-placement" },
+            { label: "Manual Placement", slug: "getting-started/manual-placement" },
           ],
         },
         {
@@ -119,7 +119,7 @@ export default defineConfig({
         {
           label: "Customer Experience",
           items: [
-            { label: "Customer Dashboard", slug: "guides/customer-dashboard" },
+            { label: "Customer Dashboard", slug: "customer-experience/customer-dashboard" },
           ],
         },
         {

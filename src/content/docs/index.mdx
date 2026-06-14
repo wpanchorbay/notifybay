@@ -1,12 +1,11 @@
 ---
-title: Welcome to NotifyBay
-description: The ultimate developer guide for the NotifyBay WordPress plugin boilerplate.
+title: "NotifyBay: The Ultimate WooCommerce Sales Recovery Suite"
+description: "Master your store's inventory and pricing strategy. Automatically recover lost revenue with professional Back-in-Stock and Price Drop notifications."
 template: splash
 prev: false
 next: false
 head:
   # OpenGraph metadata
-  # FEED_LINKS.canonical — cannot use JS expressions in YAML frontmatter
   - tag: meta
     attrs:
       property: og:url
@@ -18,12 +17,11 @@ head:
   - tag: meta
     attrs:
       property: og:title
-      content: Welcome to NotifyBay
+      content: "NotifyBay: Recover Lost Sales Automatically"
   - tag: meta
     attrs:
       property: og:description
-      content: The ultimate developer guide for the NotifyBay WordPress plugin boilerplate.
-  # FEED_LINKS.ogImage — cannot use JS expressions in YAML frontmatter
+      content: "Transform out-of-stock products and price barriers into high-converting sales opportunities."
   - tag: meta
     attrs:
       property: og:image
@@ -48,12 +46,11 @@ head:
   - tag: meta
     attrs:
       name: twitter:title
-      content: Welcome to NotifyBay
+      content: "NotifyBay: Recover Lost Sales Automatically"
   - tag: meta
     attrs:
       name: twitter:description
-      content: The ultimate developer guide for the NotifyBay WordPress plugin boilerplate.
-  # FEED_LINKS.ogImage — cannot use JS expressions in YAML frontmatter
+      content: "Transform out-of-stock products and price barriers into high-converting sales opportunities."
   - tag: meta
     attrs:
       name: twitter:image
@@ -63,18 +60,16 @@ head:
       name: twitter:image:alt
       content: NotifyBay Documentation – WPAnchorBay
 hero:
-  tagline: A modern, production-ready WordPress plugin boilerplate bridging classic development with React and TypeScript.
+  tagline: "Don't let 'Out of Stock' mean 'Out of Mind'. NotifyBay bridges the gap between customer intent and successful conversion."
   image:
     alt: NotifyBay Logo
     file: ~/assets/wpanchorbay-icon.png
   actions:
     - text: Get Started
-      # PAGE_LINKS.installation — cannot use JS expressions in YAML frontmatter
-      link: /notifybay-docs/getting-started/installation/
+      link: /notifybay-docs/getting-started/introduction/
       icon: right-arrow
       variant: primary
-    - text: View GitHub Repository
-      # EXTERNAL_LINKS.githubRepo — cannot use JS expressions in YAML frontmatter
+    - text: View on GitHub
       link: https://github.com/wpanchorbay/notifybay
       icon: external
       variant: minimal
@@ -85,17 +80,93 @@ import Card from '../../components/starlight/Card.astro';
 import WPAnchorBayFooter from '../../components/WPAnchorBayFooter.astro';
 
 <CardGrid stagger>
-	<Card title="Pre-configured Styles" icon="pencil">
-		Comes with customized typography, dark mode specific overrides, and a rich aesthetic tailored for professional documentation.
+	<Card title="Instant Revenue Recovery" icon="rocket">
+		Automatically re-engage customers the micro-second a product is restocked or a price hits their target.
 	</Card>
-	<Card title="GitHub Pages Ready" icon="rocket">
-		Includes a reliable GitHub Actions workflow that builds your documentation using PNPM and automatically deploys to GitHub Pages.
+	<Card title="Predictive Demand Insights" icon="magnifier">
+		Analyze waitlist volume to prioritize your next purchase order. Know what will sell before you even buy it.
 	</Card>
-	<Card title="Custom Components" icon="setting">
-		Override Starlight defaults out of the box. Includes modified SiteTitle, ThemeProvider, and social icon configurations.
+	<Card title="Hands-Off Automation" icon="setting">
+		Powered by a robust background engine that monitors your inventory 24/7. No manual work required after setup.
 	</Card>
-	<Card title="SEO & Performance" icon="open-book">
-		Fully leverages Astro's static site generation and includes optimized meta tags, sitemaps, and robots.txt.
+	<Card title="Enterprise-Grade Reliability" icon="approve-check">
+		Built with clean code, standard WooCommerce hooks, and a reliable Action Scheduler queue for high-volume stores.
+	</Card>
+</CardGrid>
+
+---
+
+## Intelligent Sales Recovery Modules
+
+NotifyBay provides two powerful modules designed to handle the most common reasons for customer bounce: stockouts and price sensitivity.
+
+<CardGrid>
+  <Card title="Back-in-Stock (Waitlist)">
+    Captures intent when inventory is at zero. Users can subscribe to specific variations (size/color) and receive an instant notification upon replenishment.
+    
+    <img src="/notifybay-docs/assets/screenshots/homepage-waitlist-btn.png" alt="Waitlist Button" data-lightbox="true" />
+    
+    *   **FOMO Social Proof:** Show how many others are waiting to create a "sold-out" buzz.
+    *   **Double Opt-In:** Ensure high-quality leads with email verification.
+  </Card>
+  <Card title="Price Drop (Wishlist)">
+    Perfect for high-ticket items. Let customers set their "dream price" and wait for your next sale to trigger the conversion.
+    
+    <img src="/notifybay-docs/assets/screenshots/homepage-wishlist-btn.png" alt="Price Drop Button" data-lightbox="true" />
+    
+    *   **Target Pricing:** Customers choose exactly what they are willing to pay.
+    *   **Archive Icons:** Heart icons on shop pages for quick wishlisting.
+  </Card>
+</CardGrid>
+
+## Proactive Dashboard & Analytics
+
+Transform your admin area into a data-driven command center. NotifyBay doesn't just send emails—it tells you how to grow your business.
+
+<CardGrid>
+  <Card title="Potential Recovery" icon="add-document">
+    Calculates the total market value of your current waitlists. Use this to justify inventory expansion or restocking priority.
+    
+    <img src="/notifybay-docs/assets/screenshots/homepage-recovery-card.png" alt="Potential Recovery Card" data-lightbox="true" />
+  </Card>
+  <Card title="Demand Trends" icon="list-format">
+    A 6-month historical view of customer requests. Identify seasonal patterns and growing product popularity at a glance.
+    
+    <img src="/notifybay-docs/assets/screenshots/homepage-analytics-chart.png" alt="Demand Trends Chart" data-lightbox="true" />
+  </Card>
+</CardGrid>
+
+## Exceptional Customer Experience
+
+Building trust is just as important as building a list. NotifyBay provides your customers with the transparency they expect from a premium store.
+
+<CardGrid>
+  <Card title="My Account Integration">
+    Customers can view, manage, or cancel their notification requests directly from their native WooCommerce dashboard.
+    
+    <img src="/notifybay-docs/assets/screenshots/homepage-my-account-tab.png" alt="My Account Tabs" data-lightbox="true" />
+  </Card>
+  <Card title="Urgency (Hurry) Alerts">
+    Automatically send follow-up emails when restocked items are running low again, driving immediate "last chance" conversions.
+    
+    <img src="/notifybay-docs/assets/screenshots/homepage-email-snippet.png" alt="Hurry Alert Snippet" data-lightbox="true" />
+  </Card>
+</CardGrid>
+
+## Built for Growth & Compliance
+
+Whether you are a small boutique or a high-volume enterprise, NotifyBay scales with you.
+
+<CardGrid stagger>
+	<Card title="GDPR Ready" icon="shield">
+		Includes Double Opt-In support and one-click unsubscription to ensure your email marketing stays compliant and your reputation stays clean.
+    
+    <img src="/notifybay-docs/assets/screenshots/homepage-settings-toggle.png" alt="Compliance Toggle" data-lightbox="true" />
+	</Card>
+	<Card title="Seamless Placement" icon="external">
+		Place your forms anywhere using native Gutenberg Blocks or flexible Shortcodes. Complete control over your site's layout.
+    
+    <img src="/notifybay-docs/assets/screenshots/homepage-gutenberg-block.png" alt="Gutenberg Block Integration" data-lightbox="true" />
 	</Card>
 </CardGrid>
 
