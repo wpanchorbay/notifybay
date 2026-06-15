@@ -6,57 +6,73 @@ When capturing a sectional screenshot for the NotifyBay documentation, follow th
 - Browser Window: Ensure the browser is sized to a standard 1440x900 viewport.
 - Page State: Navigate to the correct URL and perform a hard reload to clear any lingering DOM manipulation from previous captures.
 
-2. UI Cleaning
-Before applying any effects, strip away non-essential UI elements to keep the screenshot focused. Execute this in the browser console:
-- document.getElementById('wpadminbar').style.display = 'none';
-- document.getElementById('secondary').style.display = 'none';
-- document.getElementById('primary').style.width = '100%';
-- document.body.style.overflow = 'hidden';
-- document.documentElement.style.marginTop = '0';
+2. UI Cleaning & Spotlight Injection
+Evaluate this JavaScript in the browser to clean the UI, apply the spotlight, and return the cropping dimensions:
 
-3. The "Spotlight" Injection (JavaScript Execution)
-Do not use CSS borders or box-shadows. Inject a full-page overlay with a clip-path mask by running this code in the browser console:
+() => {
+    // UI Cleaning (Backend & Frontend)
+    const hideSelectors = ['#wpadminbar', '#adminmenumain', '#adminmenuwrap', '#secondary'];
+    hideSelectors.forEach(selector => {
+        const el = document.querySelector(selector);
+        if (el) el.style.display = 'none';
+    });
+    
+    const wpcontent = document.querySelector('#wpcontent');
+    if (wpcontent) wpcontent.style.marginLeft = '0';
+    
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.marginTop = '0';
 
-// A. Locate and Center Target
-const el = document.querySelector('.target-class-name'); // Replace with specific target
-el.scrollIntoView({ behavior: 'instant', block: 'center' });
+    // Locate Target (REPLACE SELECTOR BEFORE RUNNING)
+    const targetSelector = '.target-class-name'; 
+    const el = document.querySelector(targetSelector);
+    if (!el) throw new Error(`Target ${targetSelector} not found`);
+    el.scrollIntoView({ behavior: 'instant', block: 'center' });
 
-// B. Calculate Padding
-const rect = el.getBoundingClientRect();
-const padding = 15; // Standard padding
+    // Calculate Padding & Coordinates
+    const rect = el.getBoundingClientRect();
+    const padding = 15;
 
-// C. Create Full-Page Overlay
-const overlay = document.createElement('div');
-overlay.id = 'notifybay-spotlight-overlay';
-overlay.style.position = 'fixed';
-overlay.style.top = '0';
-overlay.style.left = '0';
-overlay.style.width = '100%';
-overlay.style.height = '100%';
-overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.75)'; // 75% Black
-overlay.style.zIndex = '999999';
-overlay.style.pointerEvents = 'none';
+    const t = Math.max(0, rect.top - padding);
+    const l = Math.max(0, rect.left - padding);
+    const r = Math.min(window.innerWidth, rect.right + padding);
+    const b = Math.min(window.innerHeight, rect.bottom + padding);
+    
+    const width = r - l;
+    const height = b - t;
 
-// D. Cut the "Hole" using clip-path
-const t = rect.top - padding;
-const l = rect.left - padding;
-const r = rect.right + padding;
-const b = rect.bottom + padding;
+    // Apply Spotlight Overlay
+    const overlay = document.createElement('div');
+    overlay.id = 'notifybay-spotlight-overlay';
+    overlay.style.position = 'fixed';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.75)';
+    overlay.style.zIndex = '999999';
+    overlay.style.pointerEvents = 'none';
+    overlay.style.clipPath = `polygon(
+      0% 0%, 0% 100%, 100% 100%, 100% 0%, 0% 0%, 
+      ${l}px ${t}px, ${r}px ${t}px, ${r}px ${b}px, ${l}px ${b}px, ${l}px ${t}px
+    )`;
+    document.body.appendChild(overlay);
 
-overlay.style.clipPath = `polygon(
-  0% 0%, 0% 100%, 100% 100%, 100% 0%, 0% 0%, 
-  ${l}px ${t}px, ${r}px ${t}px, ${r}px ${b}px, ${l}px ${b}px, ${l}px ${t}px
-)`;
+    el.style.position = 'relative';
+    el.style.zIndex = '1000000';
+    el.style.backgroundColor = '#ffffff';
+    
+    return { width, height, x: l, y: t };
+}
 
-document.body.appendChild(overlay);
+3. Capture
+- Take a standard viewport screenshot using mcp_chrome-devtools_take_screenshot (no uid, no fullPage).
+- Save to public/assets/screenshots/<filename>.png
 
-// E. Elevate Target Element
-el.style.position = 'relative';
-el.style.zIndex = '1000000';
-el.style.backgroundColor = '#ffffff'; // Ensure solid background
-el.style.border = 'none'; // Explicitly remove any borders
+4. Crop
+- Use the dimensions returned by the script to crop the image.
+- Run: mogrify -crop {width}x{height}+{x}+{y} +repage public/assets/screenshots/<filename>.png
 
-
-4. Capture & Save
-- Take a standard viewport screenshot (do NOT use full-page scroll capture).
-- Save directly to the public/assets/screenshots/<filename>.png file as specified in the screenshot_needs.md list.
+5. Verification
+- Run: identify public/assets/screenshots/<filename>.png
+- Check that the dimensions match the crop and the file is valid.
