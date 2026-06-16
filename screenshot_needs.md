@@ -87,12 +87,7 @@ Please capture the following **sectional screenshots** (focused crops) from the 
 * **Debug Mode Toggle (`status-advanced-debug.png`):** A crop of the "Debug Mode" checkbox in the Advanced tab.
 * **Deep Uninstall Setting (`status-advanced-uninstall.png`):** A crop of the "Delete all tables" checkbox in the Advanced tab.
 
-## 8. AI & Crawler Governance
-* **LLM Link Tags (`ai-llms-link-tags.png`):** A small crop of the browser's developer tools showing the `<link rel="alternate">` tags for `llms.txt`.
-* **MCP Metadata (`ai-mcp-json.png`):** A crop of the `mcp.json` file content showing the server name and capabilities.
-* **Robots.txt Reference (`ai-robots-txt.png`):** A crop of the `robots.txt` file showing the "Allow: /" and "Sitemap" lines.
-
-## 9. Official Resources
+## 8. Official Resources
 * **Account Dashboard (`resources-account-dashboard.png`):** A crop of the official NotifyBay.com customer dashboard showing Download and License management sections.
 * **Support Ticket Form (`resources-support-form.png`):** A small crop of the ticket submission area on the NotifyBay.com support page.
 * **Feature Request Section (`resources-feature-requests.png`):** A small crop of the feedback or roadmap suggestion area from the dashboard.

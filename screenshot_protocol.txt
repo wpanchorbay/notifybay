@@ -1,27 +1,22 @@
 Standardized Spotlight Screenshot Procedure
 
-When capturing a sectional screenshot for the NotifyBay documentation, follow this exact sequence to ensure visual consistency across all images.
+When capturing a highlighted screenshot for the NotifyBay documentation, follow this exact sequence to ensure visual consistency across all images.
 
 1. Environment Preparation
-- Browser Window: Ensure the browser is sized to a standard 1440x900 viewport.
+- Browser Window: Ensure the browser is sized to a standard 1400x900 viewport.
 - Page State: Navigate to the correct URL and perform a hard reload to clear any lingering DOM manipulation from previous captures.
 
-2. UI Cleaning & Spotlight Injection
-Evaluate this JavaScript in the browser to clean the UI, apply the spotlight, and return the cropping dimensions:
+2. Spotlight Injection & Crop Calculation
+Evaluate this JavaScript in the browser to apply the spotlight, hide scrollbars, and calculate the dynamic crop dimensions:
 
 () => {
-    // UI Cleaning (Backend & Frontend)
-    const hideSelectors = ['#wpadminbar', '#adminmenumain', '#adminmenuwrap', '#secondary'];
-    hideSelectors.forEach(selector => {
-        const el = document.querySelector(selector);
-        if (el) el.style.display = 'none';
-    });
-    
-    const wpcontent = document.querySelector('#wpcontent');
-    if (wpcontent) wpcontent.style.marginLeft = '0';
-    
-    document.body.style.overflow = 'hidden';
-    document.documentElement.style.marginTop = '0';
+    // Hide scrollbars completely
+    if (!document.getElementById('hide-scrollbars-style')) {
+        const style = document.createElement('style');
+        style.id = 'hide-scrollbars-style';
+        style.innerHTML = '::-webkit-scrollbar { display: none !important; } * { -ms-overflow-style: none !important; scrollbar-width: none !important; } body { overflow: hidden !important; }';
+        document.head.appendChild(style);
+    }
 
     // Locate Target (REPLACE SELECTOR BEFORE RUNNING)
     const targetSelector = '.target-class-name'; 
@@ -29,7 +24,7 @@ Evaluate this JavaScript in the browser to clean the UI, apply the spotlight, an
     if (!el) throw new Error(`Target ${targetSelector} not found`);
     el.scrollIntoView({ behavior: 'instant', block: 'center' });
 
-    // Calculate Padding & Coordinates
+    // Calculate Spotlight Padding & Coordinates
     const rect = el.getBoundingClientRect();
     const padding = 15;
 
@@ -37,9 +32,6 @@ Evaluate this JavaScript in the browser to clean the UI, apply the spotlight, an
     const l = Math.max(0, rect.left - padding);
     const r = Math.min(window.innerWidth, rect.right + padding);
     const b = Math.min(window.innerHeight, rect.bottom + padding);
-    
-    const width = r - l;
-    const height = b - t;
 
     // Apply Spotlight Overlay
     const overlay = document.createElement('div');
@@ -61,8 +53,28 @@ Evaluate this JavaScript in the browser to clean the UI, apply the spotlight, an
     el.style.position = 'relative';
     el.style.zIndex = '1000000';
     el.style.backgroundColor = '#ffffff';
-    
-    return { width, height, x: l, y: t };
+
+    // Dynamically calculate crop dimensions
+    let cropX = 0;
+    let cropY = 0;
+
+    // Remove Top Admin Bar if present (Frontend & Backend)
+    const wpadminbar = document.querySelector('#wpadminbar');
+    if (wpadminbar && window.getComputedStyle(wpadminbar).display !== 'none') {
+        cropY = wpadminbar.getBoundingClientRect().bottom;
+    }
+
+    // Remove Left Admin Menu if we are in the WordPress Backend
+    const isWpAdmin = document.body.classList.contains('wp-admin');
+    const wpcontent = document.querySelector('#wpcontent');
+    if (isWpAdmin && wpcontent) {
+        cropX = wpcontent.getBoundingClientRect().left;
+    }
+
+    const cropWidth = window.innerWidth - cropX;
+    const cropHeight = window.innerHeight - cropY;
+
+    return { cropWidth, cropHeight, cropX, cropY };
 }
 
 3. Capture
@@ -71,8 +83,8 @@ Evaluate this JavaScript in the browser to clean the UI, apply the spotlight, an
 
 4. Crop
 - Use the dimensions returned by the script to crop the image.
-- Run: mogrify -crop {width}x{height}+{x}+{y} +repage public/assets/screenshots/<filename>.png
+- Run: mogrify -crop {cropWidth}x{cropHeight}+{cropX}+{cropY} +repage public/assets/screenshots/<filename>.png
 
 5. Verification
-- Run: identify public/assets/screenshots/<filename>.png
-- Check that the dimensions match the crop and the file is valid.
+- Verify the image by viewing it.
+- Ensure the spotlight is applied correctly, the target element is visible, and the admin menu/navbar are cropped out.
