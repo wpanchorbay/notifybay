@@ -13,13 +13,13 @@ We provide specialized text exports that remove navigation menus, scripts, and s
 
 ### 1. The Documentation Index (`llms.txt`)
 A concise, plain-text index of every page in this documentation. It allows an agent to quickly map out the site structure without scraping HTML.
-- **Endpoint:** [/notifybay-docs/llms.txt](../../llms.txt)
+- **Endpoint:** [/notifybay/llms.txt](../../llms.txt)
 
 ### 2. Full Content Export (`llms-full.txt`)
 A single, massive text file containing the entire documentation corpus. This is ideal for giving an AI agent "full context" in a single request.
-- **Endpoint:** [/notifybay-docs/llms-full.txt](../../llms-full.txt)
+- **Endpoint:** [/notifybay/llms-full.txt](../../llms-full.txt)
 
-<img src="/notifybay-docs/assets/screenshots/ai-llms-link-tags.png" alt="Browser Head showing LLM discovery links" data-lightbox="true" />
+<img src="/notifybay/assets/screenshots/ai-llms-link-tags.png" alt="Browser Head showing LLM discovery links" data-lightbox="true" />
 
 > **Pro Tip:** Look at the HTML `<head>` of any page on this site. You will find `<link rel="alternate">` tags that automatically point agents to these files.
 
@@ -32,7 +32,7 @@ NotifyBay includes a **Model Context Protocol (MCP)** server. This allows AI age
 - **Discovery Endpoint:** [/.well-known/mcp.json](../../.well-known/mcp.json)
 - **Capability:** Allows agents to search the docs and read specific pages programmatically.
 
-<img src="/notifybay-docs/assets/screenshots/ai-mcp-json.png" alt="NotifyBay MCP Discovery Metadata" data-lightbox="true" />
+<img src="/notifybay/assets/screenshots/ai-mcp-json.png" alt="NotifyBay MCP Discovery Metadata" data-lightbox="true" />
 
 ---
 
@@ -53,4 +53,4 @@ We follow standard web conventions to ensure search engines like Google and Bing
 - **[sitemap-index.xml](../../sitemap-index.xml):** The master index of all crawlable URLs.
 - **[sitemap-0.xml](../../sitemap-0.xml):** The generated list of documentation pages.
 
-<img src="/notifybay-docs/assets/screenshots/ai-robots-txt.png" alt="NotifyBay robots.txt and Sitemap Reference" data-lightbox="true" />
+<img src="/notifybay/assets/screenshots/ai-robots-txt.png" alt="NotifyBay robots.txt and Sitemap Reference" data-lightbox="true" />

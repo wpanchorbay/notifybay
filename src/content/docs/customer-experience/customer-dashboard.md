@@ -16,7 +16,7 @@ When NotifyBay is active, it automatically injects two new tabs into the standar
 1.  **Waitlist:** A portal for tracking back-in-stock requests.
 2.  **Wishlist:** A portal for tracking price drop alerts.
 
-![Customer My Account Navigation Tabs](/notifybay-docs/assets/screenshots/myaccount-nav-tabs.png)
+![Customer My Account Navigation Tabs](/notifybay/assets/screenshots/myaccount-nav-tabs.png)
 
 ---
 
@@ -24,7 +24,7 @@ When NotifyBay is active, it automatically injects two new tabs into the standar
 
 In the **Waitlist** section, customers can see a real-time table of every product they are waiting for. This serves as a "hidden" shopping cart of items they intend to buy once replenished.
 
-![My Account Waitlist Table View](/notifybay-docs/assets/screenshots/myaccount-waitlist-table.png)
+![My Account Waitlist Table View](/notifybay/assets/screenshots/myaccount-waitlist-table.png)
 
 ### Self-Service Features:
 *   **Live Status Updates:** Customers can see if a product is still "Out of Stock" or if it has been marked as "Back in Stock!" (notified).
@@ -37,7 +37,7 @@ In the **Waitlist** section, customers can see a real-time table of every produc
 
 The **Wishlist** section provides similar transparency for customers waiting for a better deal.
 
-![My Account Wishlist Table View](/notifybay-docs/assets/screenshots/myaccount-wishlist-table.png)
+![My Account Wishlist Table View](/notifybay/assets/screenshots/myaccount-wishlist-table.png)
 
 ### Self-Service Features:
 *   **Real-Time Pricing:** Shows the current price of the item compared to their interest level.
@@ -61,9 +61,9 @@ Providing a dedicated dashboard tab for notifications is more than just a conven
 There is **zero configuration** required to enable these tabs. As long as NotifyBay is installed and activated, the "Waitlist" tab will appear. 
 
 > [!NOTE]
-> The **Wishlist** tab will only appear if the Price Drop feature is enabled in your [General Settings](/notifybay-docs/settings/general-display/).
+> The **Wishlist** tab will only appear if the Price Drop feature is enabled in your [General Settings](/notifybay/settings/general-display/).
 
 ### "I don't see the tabs in my account?"
 1.  **Verify Activation:** Ensure the NotifyBay plugin is active.
 2.  **WooCommerce Version:** Ensure you are running a modern version of WooCommerce (5.0+).
-3.  **Theme Compatibility:** Most standard WooCommerce themes support custom account tabs automatically. If your theme uses a custom account layout, you may need to place the forms manually using [Shortcodes or Blocks](/notifybay-docs/getting-started/manual-placement/).
+3.  **Theme Compatibility:** Most standard WooCommerce themes support custom account tabs automatically. If your theme uses a custom account layout, you may need to place the forms manually using [Shortcodes or Blocks](/notifybay/getting-started/manual-placement/).

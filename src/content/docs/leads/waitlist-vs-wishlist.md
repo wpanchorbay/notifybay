@@ -13,7 +13,7 @@ Understanding the difference between these two modules is crucial for effectivel
 
 A Waitlist lead is created when a customer subscribes to be notified about an **out-of-stock** product. 
 
-![Waitlist Form Badge](/notifybay-docs/assets/screenshots/leads-waitlist-badge.png)
+![Waitlist Form Badge](/notifybay/assets/screenshots/leads-waitlist-badge.png)
 
 - **The Trigger:** The notification email is sent automatically when you update your WooCommerce inventory and the product becomes "In stock."
 - **Customer Intent:** These shoppers have immediate intent to buy. They have already committed to your product and are simply waiting for you to make it available.
@@ -25,7 +25,7 @@ A Waitlist lead is created when a customer subscribes to be notified about an **
 
 A Wishlist lead is created when a customer subscribes to an **in-stock** product because they are waiting for a better deal.
 
-![Wishlist Form Badge](/notifybay-docs/assets/screenshots/leads-wishlist-badge.png)
+![Wishlist Form Badge](/notifybay/assets/screenshots/leads-wishlist-badge.png)
 
 - **The Trigger:** The customer sets a "Target Price" (e.g., the product is $100, but they only want to pay $80). The alert is sent if you lower the price to meet or beat that target.
 - **Customer Intent:** These shoppers are price-sensitive. They want your product but are hesitant to pay the current full price.
@@ -39,7 +39,7 @@ A Wishlist lead is created when a customer subscribes to an **in-stock** product
 | :--- | :--- | :--- |
 | **Product Status** | Out of Stock | In Stock |
 | **Primary Driver** | Inventory Availability | Price Sensitivity |
-| **Key Metric** | [Potential Recovery](/notifybay-docs/dashboard/analytics/) | [Pent-up Demand](/notifybay-docs/dashboard/analytics/) |
+| **Key Metric** | [Potential Recovery](/notifybay/dashboard/analytics/) | [Pent-up Demand](/notifybay/dashboard/analytics/) |
 | **Marketing Goal** | Immediate conversion upon restock. | Strategic conversion during sales events. |
 
 ---
@@ -53,4 +53,4 @@ NotifyBay is unique because it handles both ends of the conversion funnel.
 By running both modules, you capture 100% of customer interest, regardless of your current inventory or pricing.
 
 > [!TIP]
-> You can enable or disable these modules individually in your [General Settings](/notifybay-docs/settings/general-display/).
+> You can enable or disable these modules individually in your [General Settings](/notifybay/settings/general-display/).

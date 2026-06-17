@@ -18,7 +18,7 @@ If you are using the modern WordPress Block Editor (Gutenberg), NotifyBay includ
 2.  Click the **+ (Toggle Block Inserter)** button at the top left.
 3.  Search for **"NotifyBay"**.
 
-![Searching for NotifyBay Blocks](/notifybay-docs/assets/screenshots/manual-placement-block-search.png)
+![Searching for NotifyBay Blocks](/notifybay/assets/screenshots/manual-placement-block-search.png)
 
 4.  Select the block you need:
     *   **NotifyBay Waitlist:** Adds the "Notify Me" restock form.
@@ -32,7 +32,7 @@ Instead of looking up IDs manually, you can search for a product title directly 
 - **Current Page Product:** By default, the block automatically detects the product if it's placed on a product page.
 - **Target Specific Product:** Use the search box to find and select any product from your store to target it specifically.
 
-![Block Sidebar Settings](/notifybay-docs/assets/screenshots/manual-placement-block-settings.png)
+![Block Sidebar Settings](/notifybay/assets/screenshots/manual-placement-block-settings.png)
 
 ---
 
@@ -52,7 +52,7 @@ Use this to display the "Track Price" or "Add to Wishlist" button:
 [notifybay_wishlist]
 ```
 
-![Shortcode in Text Editor](/notifybay-docs/assets/screenshots/manual-placement-shortcode-example.png)
+![Shortcode in Text Editor](/notifybay/assets/screenshots/manual-placement-shortcode-example.png)
 
 ### Customizing the Shortcode
 If you are placing the shortcode on a page that isn't the product itself, you must tell the shortcode which product to watch using the `id` attribute.
@@ -72,7 +72,7 @@ You will need the Product ID whenever you are using Shortcodes on a non-product 
 2.  Hover your mouse over the title of the product you want to track.
 3.  The **ID** will appear in small gray text immediately below the title (e.g., `ID: 123`).
 
-![Locating the Product ID](/notifybay-docs/assets/screenshots/manual-placement-product-id.png)
+![Locating the Product ID](/notifybay/assets/screenshots/manual-placement-product-id.png)
 
 ---
 

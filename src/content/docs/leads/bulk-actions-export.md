@@ -16,7 +16,7 @@ The **NotifyBay > Leads** interface includes a bulk processing engine that allow
 *   **Page Selection:** Click the master checkbox in the table header to select all **20 leads** on the current page.
 *   **Search & Select:** Use the search bar to find a specific segment (e.g., all `@gmail.com` users), then use the master checkbox to select just that group.
 
-![Bulk Selection UI](/notifybay-docs/assets/screenshots/leads-bulk-selection.png)
+![Bulk Selection UI](/notifybay/assets/screenshots/leads-bulk-selection.png)
 
 ### 2. Available Bulk Actions
 Once you have selected your leads, choose one of the following actions from the dropdown menu and click **Apply**:
@@ -29,7 +29,7 @@ Once you have selected your leads, choose one of the following actions from the 
 > [!WARNING]
 > **Deletion is permanent.** Once you delete a lead, it cannot be recovered, and its historical data will be removed from your analytics.
 
-![Bulk Dropdown Open](/notifybay-docs/assets/screenshots/leads-bulk-dropdown.png)
+![Bulk Dropdown Open](/notifybay/assets/screenshots/leads-bulk-dropdown.png)
 
 ---
 
@@ -42,7 +42,7 @@ NotifyBay provides a "one-click" export feature that generates a professionally 
 2.  Click the **Export CSV ⬇** button at the top right of the page.
 3.  The file (e.g., `notifybay-leads-2024-06-18.csv`) will download immediately.
 
-![Export Button Crop](/notifybay-docs/assets/screenshots/leads-export-button.png)
+![Export Button Crop](/notifybay/assets/screenshots/leads-export-button.png)
 
 ### What's Inside the Export?
 The CSV file includes every detail needed for advanced marketing analysis:

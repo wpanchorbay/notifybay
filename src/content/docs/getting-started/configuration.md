@@ -3,7 +3,7 @@ title: Configuration
 description: Essential setup steps for NotifyBay merchants.
 ---
 
-Once you have [installed](/notifybay-docs/getting-started/installation/) NotifyBay, there are a few essential settings you should configure to ensure the plugin behaves exactly how you want.
+Once you have [installed](/notifybay/getting-started/installation/) NotifyBay, there are a few essential settings you should configure to ensure the plugin behaves exactly how you want.
 
 ## 1. Enable Features
 

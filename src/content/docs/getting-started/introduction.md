@@ -21,14 +21,14 @@ When a product hits zero inventory, NotifyBay replaces the static "Out of Stock"
 - **Variation Aware:** Customers can subscribe to specific sizes or colors, ensuring they only get notified for the exact item they want.
 - **Lead Expiry:** Allow customers to choose how long they want to stay on the list (e.g., 7, 30, or 90 days), ensuring your notification list stays fresh and relevant.
 
-![Waitlist Subscription Form with Expiry](/notifybay-docs/assets/screenshots/intro-waitlist-form.png)
+![Waitlist Subscription Form with Expiry](/notifybay/assets/screenshots/intro-waitlist-form.png)
 
 ### ⭐ Price Drop (Wishlist)
 Allow customers to track their favorite products and wait for a deal. Users can set a "Target Price"—their ideal purchase price.
 - **The Trigger:** If you lower the product price (via a sale or permanent change) to meet or beat their target, they receive an automated alert to come back and buy.
 - **Strategic Discounting:** Analyze subscriber data to see exactly what price point will trigger the most sales.
 
-![Price Drop Button](/notifybay-docs/assets/screenshots/intro-wishlist-btn.png)
+![Price Drop Button](/notifybay/assets/screenshots/intro-wishlist-btn.png)
 
 ---
 
@@ -42,7 +42,7 @@ Avoid "trigger-happy" notifications. If you only restock 1 unit (perhaps a retur
 ### 2. Fair-Play Restock Batches
 If you restock 10 items but have 100 people waiting, NotifyBay can notify exactly the first 10 people in line. It then "reserves" those units for a few hours before notifying the next batch, ensuring every customer who gets an email actually has a chance to buy.
 
-![Fair Play Settings](/notifybay-docs/assets/screenshots/intro-fair-play.png)
+![Fair Play Settings](/notifybay/assets/screenshots/intro-fair-play.png)
 
 ### 3. "Hurry" (Last Chance) Automation
 NotifyBay can automatically send a second "Hurry" email when a recently restocked item is about to sell out again. This follow-up triggers immediate conversions by creating a genuine "last chance" scenario.
@@ -56,7 +56,7 @@ Building trust is just as important as building a list. NotifyBay provides your 
 ### Customer Self-Service Dashboard
 Logged-in users can manage, track, and cancel their alerts directly from their native WooCommerce **My Account** page. This reduces support tickets and gives customers complete control over their data.
 
-![Customer My Account Dashboard](/notifybay-docs/assets/screenshots/intro-my-account-tab.png)
+![Customer My Account Dashboard](/notifybay/assets/screenshots/intro-my-account-tab.png)
 
 ### GDPR & Compliance Ready
 Includes full support for **Double Opt-In** verification and one-click unsubscription to ensure your email marketing stays compliant and your sender reputation stays clean.
@@ -69,7 +69,7 @@ Stop guessing what to order or when to run a sale. The NotifyBay dashboard provi
 - **Converted Sales:** See exactly how much money was generated from your notification emails.
 - **Potential Recovery:** Know the total market value of your waitlists to prioritize your purchasing budget.
 
-![Converted Sales Metric Card](/notifybay-docs/assets/screenshots/intro-conversion-card.png)
+![Converted Sales Metric Card](/notifybay/assets/screenshots/intro-conversion-card.png)
 
 ---
 
@@ -78,8 +78,8 @@ Stop guessing what to order or when to run a sale. The NotifyBay dashboard provi
 NotifyBay is a premium solution available exclusively via our official website. 
 
 ### Next Steps:
-1.  **[Installation Guide](/notifybay-docs/getting-started/installation/):** Learn how to upload and activate your copy.
-2.  **[Quick Start Guide](/notifybay-docs/getting-started/quick-start/):** Get your first "Notify Me" button live in under 5 minutes.
-3.  **[Manual Placement](/notifybay-docs/getting-started/manual-placement/):** Learn how to use Gutenberg Blocks and Shortcodes.
+1.  **[Installation Guide](/notifybay/getting-started/installation/):** Learn how to upload and activate your copy.
+2.  **[Quick Start Guide](/notifybay/getting-started/quick-start/):** Get your first "Notify Me" button live in under 5 minutes.
+3.  **[Manual Placement](/notifybay/getting-started/manual-placement/):** Learn how to use Gutenberg Blocks and Shortcodes.
 
 <WPAnchorBayFooter />

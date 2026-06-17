@@ -11,7 +11,7 @@ The **Email Templates** tab allows you to customize the voice and branding of ev
 
 Before editing individual templates, you must set your store's "From" identity. This is what customers see in their inbox.
 
-![Email Identity Settings](/notifybay-docs/assets/screenshots/email-sender-identity.png)
+![Email Identity Settings](/notifybay/assets/screenshots/email-sender-identity.png)
 
 *   **From Name:** The name shown as the sender (e.g., "My Boutique Team").
 *   **From Email:** The email address used for sending. 
@@ -36,10 +36,10 @@ A follow-up email sent when a recently restocked item is about to sell out again
 - **Goal:** Leverage "Last Chance" psychology to close hesitant buyers.
 
 ### ✅ Verification Emails
-Sent when a guest subscribes (if [Double Opt-In](/notifybay-docs/getting-started/configuration/) is enabled).
+Sent when a guest subscribes (if [Double Opt-In](/notifybay/getting-started/configuration/) is enabled).
 - **Goal:** Confirm the customer's email address and valid interest.
 
-![Individual Template Editor](/notifybay-docs/assets/screenshots/email-template-editor.png)
+![Individual Template Editor](/notifybay/assets/screenshots/email-template-editor.png)
 
 ---
 
@@ -68,7 +68,7 @@ Personalized emails convert at a much higher rate. Use these **Dynamic Tags** (p
 
 NotifyBay automatically appends **UTM parameters** to every `{buy_link}` inside your emails. 
 
-![UTM Attribution Snippet](/notifybay-docs/assets/screenshots/email-utm-attribution.png)
+![UTM Attribution Snippet](/notifybay/assets/screenshots/email-utm-attribution.png)
 
 - **How it works:** When a customer clicks the link in their email, Google Analytics (or other tools) will record the source as `notifybay`.
 - **The Benefit:** You can track exactly how much revenue was generated from your restock alerts vs. price drop alerts directly in your store's primary analytics tool.

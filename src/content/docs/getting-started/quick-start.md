@@ -3,7 +3,7 @@ title: Quick Start Guide
 description: Get NotifyBay running on your WooCommerce store in 5 minutes with our foolproof 3-step setup.
 ---
 
-Once you have [installed](/notifybay-docs/getting-started/installation/) NotifyBay, you can get it up and running on your storefront in just a few minutes. This guide walks you through the absolute essentials to start recovering revenue today.
+Once you have [installed](/notifybay/getting-started/installation/) NotifyBay, you can get it up and running on your storefront in just a few minutes. This guide walks you through the absolute essentials to start recovering revenue today.
 
 ---
 
@@ -16,7 +16,7 @@ First, decide which notification features you want to offer your customers.
 3.  Ensure **Waitlist (Back-in-Stock)** is toggled ON to capture intent for out-of-stock items.
 4.  Toggle **Enable Wishlist** to ON if you want customers to track price drops.
 
-<img src="/notifybay-docs/assets/screenshots/quickstart-general-toggles.png" alt="General Feature Toggles" data-lightbox="true" />
+<img src="/notifybay/assets/screenshots/quickstart-general-toggles.png" alt="General Feature Toggles" data-lightbox="true" />
 
 5.  Click **Save Settings** at the bottom of the page.
 
@@ -30,7 +30,7 @@ NotifyBay needs to look like a native part of your store. You can customize the 
     *   Change the **Waitlist Button Text** (e.g., "Alert me when in stock!").
     *   Add your theme's primary button class to the **Button CSS Class** field (e.g., `button alt` or `btn-primary`) to ensure a perfect visual match.
 
-<img src="/notifybay-docs/assets/screenshots/quickstart-display-styling.png" alt="Button Styling Settings" data-lightbox="true" />
+<img src="/notifybay/assets/screenshots/quickstart-display-styling.png" alt="Button Styling Settings" data-lightbox="true" />
 
 4.  Click **Save Settings**.
 
@@ -43,12 +43,12 @@ Before going live, it's critical to verify the "Customer-to-Dashboard" flow.
 3.  **Check your Dashboard:** Go back to your admin browser tab and navigate to **NotifyBay > Leads**.
 4.  **Success:** You should see your test email at the top of the list with an "Active" status.
 
-<img src="/notifybay-docs/assets/screenshots/quickstart-test-lead.png" alt="Successful Test Lead in Dashboard" data-lightbox="true" />
+<img src="/notifybay/assets/screenshots/quickstart-test-lead.png" alt="Successful Test Lead in Dashboard" data-lightbox="true" />
 
 ---
 
 ### What's Next?
 Now that your engine is running, you can:
-- [Customize your email templates](/notifybay-docs/settings/email-templates/) to match your brand voice.
-- Set up [Double Opt-In](/notifybay-docs/getting-started/configuration/) for better email hygiene.
-- Learn how to place forms manually using [Shortcodes or Blocks](/notifybay-docs/getting-started/manual-placement/).
+- [Customize your email templates](/notifybay/settings/email-templates/) to match your brand voice.
+- Set up [Double Opt-In](/notifybay/getting-started/configuration/) for better email hygiene.
+- Learn how to place forms manually using [Shortcodes or Blocks](/notifybay/getting-started/manual-placement/).
