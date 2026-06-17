@@ -77,9 +77,6 @@ Stop guessing what to order or when to run a sale. The NotifyBay dashboard provi
 
 NotifyBay is a premium solution available exclusively via our official website. 
 
-> [!IMPORTANT]
-> **Not on WordPress.org:** NotifyBay is a professional-grade suite and is not listed on the public WordPress plugin directory. You can only download, license, and update the plugin via your [NotifyBay.com account dashboard](https://notifybay.com).
-
 ### Next Steps:
 1.  **[Installation Guide](/notifybay-docs/getting-started/installation/):** Learn how to upload and activate your copy.
 2.  **[Quick Start Guide](/notifybay-docs/getting-started/quick-start/):** Get your first "Notify Me" button live in under 5 minutes.

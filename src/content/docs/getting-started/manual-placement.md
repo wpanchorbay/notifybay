@@ -1,41 +1,17 @@
 ---
-title: Manual Placement (Blocks & Shortcodes)
-description: Take full control over your store layout. Learn how to place NotifyMe and Track Price forms exactly where you want them.
+title: Manual Placement (Shortcodes)
+description: Take full control over your store layout. Learn how to place NotifyMe and Track Price forms exactly where you want them using Shortcodes.
 ---
 
 By default, NotifyBay automatically places the Sales Recovery forms on your standard WooCommerce single product pages. However, modern stores often use custom landing pages, blog posts, or unique theme layouts that require more flexibility.
 
-NotifyBay provides two professional ways to manually place your forms: **Native Gutenberg Blocks** and **Dynamic Shortcodes**.
+NotifyBay provides dynamic **Shortcodes** to help you place your forms exactly where you want them.
 
 ---
 
-## 1. Using Gutenberg Blocks
+## 1. Using Shortcodes
 
-If you are using the modern WordPress Block Editor (Gutenberg), NotifyBay includes dedicated blocks that look and feel like a native part of your editing experience.
-
-### How to Add a Block:
-1.  Open any Page or Post in the WordPress editor.
-2.  Click the **+ (Toggle Block Inserter)** button at the top left.
-3.  Search for **"NotifyBay"**.
-
-![Searching for NotifyBay Blocks](/notifybay-docs/assets/screenshots/manual-placement-block-search.png)
-
-4.  Select the block you need:
-    *   **NotifyBay Waitlist:** Adds the "Notify Me" restock form.
-    *   **NotifyBay Wishlist:** Adds the "Track Price" heart/button.
-
-### Configuring the Block:
-Once the block is placed, you can customize it using the settings sidebar on the right:
-- **Product ID:** By default, this is set to `0`. This means the block will automatically detect the product associated with the current page.
-- **Specific Product:** If you are building a landing page for a specific item, enter its **Product ID** in this field to force the block to track that item.
-
-![Block Sidebar Settings](/notifybay-docs/assets/screenshots/manual-placement-block-settings.png)
-
----
-
-## 2. Using Shortcodes
-
-Shortcodes are the most flexible method and work inside the Classic Editor, Sidebar Widgets, and popular page builders like **Elementor**, **Divi**, or **Beaver Builder**.
+Shortcodes are the most flexible placement method. They work inside the Standard Block Editor, the Classic Editor, Sidebar Widgets, and popular page builders like **Elementor**, **Divi**, or **Beaver Builder**.
 
 ### The Restock (Waitlist) Shortcode
 Use this to display the back-in-stock subscription form:
@@ -49,9 +25,17 @@ Use this to display the "Track Price" or "Add to Wishlist" button:
 [notifybay_wishlist]
 ```
 
+### How to Add to a Page:
+1.  Open any Page or Post in the WordPress editor.
+2.  Add a **Shortcode Block** (or a standard Paragraph block).
+3.  Paste the shortcode.
+
 ![Shortcode in Text Editor](/notifybay-docs/assets/screenshots/manual-placement-shortcode-example.png)
 
-### Customizing the Shortcode
+---
+
+## 2. Customizing the Shortcode
+
 If you are placing the shortcode on a page that isn't the product itself (like a "Coming Soon" landing page), you must tell the shortcode which product to watch using the `id` attribute.
 
 **Example:** To show a waitlist form for Product #123 on your homepage:
@@ -77,7 +61,7 @@ You will need the Product ID whenever you are placing a NotifyBay form on a non-
 
 | Placement Need | Recommended Method | Why? |
 | :--- | :--- | :--- |
-| **Standard Pages & Posts** | **Gutenberg Blocks** | Visual, easy to drag-and-drop, and no code required. |
+| **Standard Pages & Posts** | **Shortcode Block** | Simple copy-paste into any block area. |
 | **Page Builders** | **Shortcodes** | Best compatibility with Elementor, Divi, etc. |
 | **Sidebar Widgets** | **Shortcodes** | Works perfectly inside "Text" or "Shortcode" widgets. |
 | **Custom Theme Code** | **PHP Function** | Developers can use `echo do_shortcode('[notifybay_waitlist]');`. |

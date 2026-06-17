@@ -5,9 +5,6 @@ description: Get NotifyBay running on your WooCommerce store in 5 minutes with o
 
 Once you have [installed](/notifybay-docs/getting-started/installation/) NotifyBay, you can get it up and running on your storefront in just a few minutes. This guide walks you through the absolute essentials to start recovering revenue today.
 
-> [!IMPORTANT]
-> NotifyBay is currently exclusive to our official website. If you haven't purchased your copy yet, please visit [NotifyBay.com](https://notifybay.com) to get started. It is not yet available on the WordPress.org repository.
-
 ---
 
 ## Step 1: Activate Your Core Modules
