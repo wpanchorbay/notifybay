@@ -3,7 +3,7 @@ export const SITE_ORIGIN =
   process.env.PUBLIC_SITE_ORIGIN ||
   "https://docs.wpanchorbay.com";
 
-export const BASE_PATH = "/notifybay-docs";
+export const BASE_PATH = "/notifybay";
 
 export const REPO_URL =
   process.env.DOCS_REPO_URL ?? "https://github.com/wpanchorbay/notifybay";
