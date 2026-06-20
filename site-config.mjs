@@ -1,7 +1,7 @@
 export const SITE_ORIGIN =
   process.env.SITE_ORIGIN ||
   process.env.PUBLIC_SITE_ORIGIN ||
-  "https://docs.wpanchorbay.com";
+  "https://docs.wpanchorbay.com/notifybay/";
 
 export const BASE_PATH = "/notifybay";
 
@@ -14,10 +14,10 @@ export const LOGO_SVG_PATH = "./src/assets/icon_notifybay.svg";
 export const ICON_HREF = `${BASE_PATH}/assets/icon_notifybay.svg`;
 
 /** Absolute site-relative path to the OpenGraph share image. */
-export const OG_IMAGE_HREF = `${BASE_PATH}/assets/WPAnchorBay-Documentation-OG.png`;
+export const OG_IMAGE_HREF = `${BASE_PATH}/assets/icon_notifybay.svg`;
 
 export const WPANCHORBAY_URL = "https://wpanchorbay.com";
-export const WPANCHORBAY_PROJECT_LANDING_URL = "https://wpanchorbay.com";
+export const WPANCHORBAY_PROJECT_LANDING_URL = "https://wpanchorbay.com/plugins/notifybay";
 
 export function buildAbsoluteUrl(pathname = "/") {
   const normalizedPath = pathname.startsWith("/") ? pathname : `/${pathname}`;
