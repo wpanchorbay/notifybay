@@ -8,10 +8,10 @@ export const BASE_PATH = "/notifybay";
 export const REPO_URL =
   process.env.DOCS_REPO_URL ?? "https://github.com/wpanchorbay/notifybay";
 
-export const LOGO_SVG_PATH = "./src/assets/wpanchorbay-icon.svg";
+export const LOGO_SVG_PATH = "./src/assets/icon_notifybay.svg";
 
 /** Absolute site-relative path to the icon used as the page favicon and navbar logo. */
-export const ICON_HREF = `${BASE_PATH}/assets/wpanchorbay-icon.svg`;
+export const ICON_HREF = `${BASE_PATH}/assets/icon_notifybay.svg`;
 
 /** Absolute site-relative path to the OpenGraph share image. */
 export const OG_IMAGE_HREF = `${BASE_PATH}/assets/WPAnchorBay-Documentation-OG.png`;
