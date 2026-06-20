@@ -131,12 +131,6 @@ export default defineConfig({
             { label: "Advanced & System Status", slug: "settings/system-status" },
           ],
         },
-        {
-          label: "Others",
-          items: [
-            { label: "AI & Crawler Governance", slug: "others/ai-crawler" },
-          ],
-        },
       ],
     }),
   ],
